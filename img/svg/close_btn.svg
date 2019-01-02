@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="33px" viewBox="0 0 34 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>close_btn</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0885221333 44 43.8949867 44 43.8949867 0.0763705882 0.0885221333 0.0763705882 0.0885221333 44"></polygon>
+    </defs>
+    <g id="silviapititto.com-Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Site-Notice" transform="translate(-1302.000000, -72.000000)">
+            <g id="close_btn" transform="translate(1302.000000, 72.000000)">
+                <g>
+                    <g id="Group-3" transform="translate(1.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M0.752130133,3.95634118 L40.0253568,43.3344588 C40.9102848,44.2218706 42.3465621,44.2218706 43.2313728,43.3346941 C44.1163008,42.4474 44.1163008,41.0072824 43.2313728,40.1199882 L3.95814613,0.741752941 C3.07333547,-0.145423529 1.6369408,-0.145423529 0.752130133,0.741752941 C-0.132680533,1.62892941 -0.132680533,3.06916471 0.752130133,3.95634118" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                    <path d="M0.666538548,43.3334615 C1.55525661,44.2221795 2.99799452,44.2221795 3.88671258,43.3334615 L43.3333731,3.88680097 C44.222209,2.99796506 44.222209,1.555345 43.3333731,0.666509088 C42.444655,-0.222208976 41.0020349,-0.222208976 40.113199,0.666744791 L0.666538548,40.1132874 C-0.222179516,41.0020055 -0.222179516,42.4447434 0.666538548,43.3334615" id="Fill-4" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
