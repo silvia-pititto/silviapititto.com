@@ -249,4 +249,40 @@
     $(thisAlert).removeClass("alert-validate");
   }
 
+  // Loader setup
+  //create image to preload:
+  var imgPreload = new Image();
+  $(imgPreload).attr({
+    src: "../img/home/background.jpg"
+  });
+
+  //check if the image is already loaded (cached):
+  if (imgPreload.complete || imgPreload.readyState === 4) {
+    //image loaded:
+    animateHome();
+    setBackgroundImage();
+  } else {
+    //go fetch the image:
+    $(imgPreload).load(function (response, status, xhr) {
+      animateHome();
+      if (status == 'error') {
+        //image could not be loaded:
+      } else {
+        //image loaded:
+        setBackgroundImage();
+      }
+    });
+  }
+
+  function animateHome() {
+    $('#logo').css('opacity', 1);
+    $('.skill-list').css('opacity', 1);
+    $('.spinner-container').hide();
+  }
+
+  function setBackgroundImage() {
+
+    $('.header').addClass('background-header');
+  }
+
 })(jQuery);
