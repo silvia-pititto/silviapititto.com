@@ -167,11 +167,10 @@ header#home.header{
 }
 .background-grey{
     background: #302F2F;
-    max-height: 752px;
 }
 .text-overflow{
-    max-height:752px;
-    overflow:auto;
+    max-height: 100vh;
+    overflow: auto;
 }
 .text-overflow p{
     font-family: 'Open Sans', sans-serif;
