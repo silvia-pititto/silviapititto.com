@@ -68,31 +68,83 @@ a{
 .header {
     display: table;
     position: relative;
+    background: #E5E5E5;
     width: 100%;
-    background: url(../img/home/background.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
     padding-left: 20px;
     padding-right: 20px;
-
 }
+.background-header {
+  background: url("http://silviapititto.com/img/home/background.jpg") no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  -webkit-transition: fadein 0.5s;
+  -moz-transition: fadein 0.5s;
+  -o-transition: fadein 0.5s;
+  transition: fadein 0.5s;
+  padding-top: 16% !important;
+}
+.background-header-default {
+  background-color: coral;
+  background: linear-gradient(45deg, #FF4B50, #FF753E, #FFFC65);
+  -webkit-transition: fadein 0.5s;
+  -moz-transition: fadein 0.5s;
+  -o-transition: fadein 0.5s;
+  transition: fadein 0.5s;
+  padding-top: 16% !important;
+}
+/* Fade In Animations */
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .header-container{
     padding-left: 0;
     padding-right: 0;
 }
 #logo{
     margin-bottom: 22%;
+    opacity: 0;
 }
 header#home.header{
-    padding-top: 16%;
+    padding-top: 10%;
 }
 .skill-list{
     color: white;
     margin-bottom: 0px;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
+    opacity: 0;
 }
 .skill-list li{
     margin-left: 3px;
@@ -115,11 +167,10 @@ header#home.header{
 }
 .background-grey{
     background: #302F2F;
-    max-height: 752px;
 }
 .text-overflow{
-    max-height:752px;
-    overflow:auto;
+    max-height: 100vh;
+    overflow: auto;
 }
 .text-overflow p{
     font-family: 'Open Sans', sans-serif;
@@ -1360,4 +1411,94 @@ and (max-device-width : 568px) {
     .footer-img {
       max-width: 25%;
     }
+}
+/**
+Loading spinner
+*/
+/* .spinner-container {
+  position: absolute;
+  padding-top: 10%;
+  left: 45%;
+  /* transform: translate(-50%, -50%); */
+/* }
+.dot {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px;
+  transform: scale(0);
+  animation: fx 1000ms ease infinite 0ms;
+}
+.dot:nth-child(2) {
+  animation: fx 1000ms ease infinite 300ms;
+}
+.dot:nth-child(3) {
+  animation: fx 1000ms ease infinite 600ms;
+}
+@keyframes fx {
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
+/**
+Heart beat
+*/
+.spinner-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(5);
+}
+.spinner-container svg polyline {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.spinner-container svg polyline#back {
+  stroke: rgba(255,75,80,0.3);
+}
+#front {
+  stroke: #ff4b50;
+  stroke-dasharray: 12, 36;
+  stroke-dashoffset: 48;
+  animation: dash 1s linear infinite;
+}
+@-moz-keyframes dash {
+  62.5% {
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes dash {
+  62.5% {
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-o-keyframes dash {
+  62.5% {
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  62.5% {
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
