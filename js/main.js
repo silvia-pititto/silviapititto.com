@@ -253,7 +253,7 @@
   //create image to preload:
   var imgPreload = new Image();
   $(imgPreload).attr({
-    src: "../img/home/background.jpg"
+    src: "http://silviapititto.com/img/home/background.jpg"
   });
 
   //check if the image is already loaded (cached):
@@ -267,6 +267,7 @@
       animateHome();
       if (status == 'error') {
         //image could not be loaded:
+        $('.header').addClass('background-header-default');
       } else {
         //image loaded:
         setBackgroundImage();
@@ -281,7 +282,6 @@
   }
 
   function setBackgroundImage() {
-
     $('.header').addClass('background-header');
   }
 
