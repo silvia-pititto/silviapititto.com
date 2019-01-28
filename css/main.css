@@ -610,6 +610,13 @@ input{
 .link:focus{
     color: #454443 !important;
 }
+.link-white {
+  color: white !important;
+}
+.link-white:hover,
+.link-white:focus{
+    opacity: 0.5;
+}
 .full-width-col{
     width: 100vw;
 }
