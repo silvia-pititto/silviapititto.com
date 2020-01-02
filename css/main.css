@@ -1,6 +1,6 @@
 /*
  * silviapititto.com
- * Copyright 2019 Silvia Pititto
+ * Copyright 2020 Silvia Pititto
  *
  */
 /* Global Styles */
@@ -1476,6 +1476,12 @@ Heart beat
   stroke-dasharray: 12, 36;
   stroke-dashoffset: 48;
   animation: dash 1s linear infinite;
+}
+/* Make animations wait */
+.loading *,
+.loading *:before,
+.loading *:after {
+  animation-play-state: paused !important;
 }
 @-moz-keyframes dash {
   62.5% {
