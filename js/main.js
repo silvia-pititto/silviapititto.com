@@ -9,8 +9,15 @@
   // Fast click
   FastClick.attach(document.body);
 
-  $(function() {
-    "use strict"; // Start of use strict
+  // Stop the animations while the document is loading
+  document.body.classList.add('loading');
+  window.addEventListener('load', showPage, false);
+
+  function showPage() {
+    document.body.classList.remove('loading');
+  }
+
+  $(document).ready(function() {
     $("a.page-scroll").click(function(event) {
       //            event.preventDefault();
       //            var $anchor = $(this);
@@ -129,7 +136,6 @@
     var sr =  ScrollReveal();
     sr.reveal(".reveal-home, .reveal-logo", logoReveal, 50);
     sr.reveal(".reveal-footer, .reveal-about , .reveal-work", fooReveal);
-  });
 
   /* Swiper */
   var spaceBetweenSlides = 20;
@@ -198,8 +204,7 @@
     $(this).on("blur", function(){
       if($(this).val().trim() != "") {
         $(this).addClass("has-val");
-      }
-      else {
+      } else {
         $(this).removeClass("has-val");
       }
     });
@@ -249,7 +254,7 @@
     $(thisAlert).removeClass("alert-validate");
   }
 
-  // Loader setup
+
   //create image to preload:
   var imgPreload = new Image();
   $(imgPreload).attr({
@@ -259,30 +264,37 @@
   //check if the image is already loaded (cached):
   if (imgPreload.complete || imgPreload.readyState === 4) {
     //image loaded:
-    animateHome();
-    setBackgroundImage();
+    animateHome(function() {
+      setBackgroundImage();
+    });
   } else {
     //go fetch the image:
     $(imgPreload).load(function (response, status, xhr) {
-      animateHome();
-      if (status == 'error') {
-        //image could not be loaded:
-        $('.header').addClass('background-header-default');
-      } else {
-        //image loaded:
-        setBackgroundImage();
-      }
+      animateHome(function() {
+        if (status == 'error') {
+          //image could not be loaded:
+          $('.header').addClass('background-header-default');
+        } else {
+          //image loaded:
+          setBackgroundImage();
+        }
+      });
     });
   }
 
-  function animateHome() {
-    $('#logo').css('opacity', 1);
-    $('.skill-list').css('opacity', 1);
-    $('.spinner-container').hide();
+  function animateHome(completion) {
+    $('.spinner-container').fadeOut(function() {
+      $('#logo').css('opacity', 1);
+      $('.skill-list').css('opacity', 1);
+      completion();
+    });
   }
 
   function setBackgroundImage() {
     $('.header').addClass('background-header');
   }
+
+});
+
 
 })(jQuery);
