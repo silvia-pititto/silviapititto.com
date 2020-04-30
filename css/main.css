@@ -1515,3 +1515,8 @@ Heart beat
     stroke-dashoffset: 0;
   }
 }
+
+@media(min-width: 1920px){
+    .profile-img {
+        right: -5% !important;
+    }
