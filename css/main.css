@@ -226,7 +226,7 @@ header#home.header{
     opacity: 0;
 }
 .portfolio-content,
-.no-padding{
+.no-padding {
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -303,7 +303,6 @@ footer {
     font-size: 12pt;
     color: #6D6C6B;
     margin-bottom:1.5rem;
-    margin-top:-1rem;
 }
 .margin-list{
     margin: 2em 0rem 2.5rem 0rem;
@@ -685,11 +684,15 @@ input{
   padding-top: 110pt;
 }
 .footer-img {
-  max-width: 10%;
+  /* max-width: 10%; */
+  max-width: 100px;
 }
 
 /*---------------------------------------------*/
 /* Contact Form */
+#contact {
+    height: 100vh;
+}
 input {
 	outline: none;
 	border: none;
@@ -1520,3 +1523,28 @@ Heart beat
     .profile-img {
         right: -5% !important;
     }
+    #about-content-header {
+        font-size: 24pt;
+        padding-top: 8rem !important;
+        padding-bottom: 2rem !important;
+    }
+    .portfolio-content {
+        padding-left: 12rem !important;
+        padding-right: 12rem !important;
+    }
+    .m-bottom {
+        margin-bottom: 2.5rem;
+    }
+    .header-margin {
+        margin-bottom: 2.5rem;
+    }
+    .contact-content {
+        padding-left: 12rem !important;
+        padding-right: 12rem !important;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .container-contact2 {
+        padding-bottom: 100pt;
+    }
+}
