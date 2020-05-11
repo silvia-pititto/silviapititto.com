@@ -952,9 +952,9 @@ textarea.input2 + .focus-input2::after {
 [ Responsive ]*/
 
 @media (max-width: 576px) {
-  .wrap-contact2 {
+  /* .wrap-contact2 {
     padding: 72px 15px 90px 15px;
-  }
+  } */
 }
 
 
@@ -1040,6 +1040,10 @@ textarea.input2 + .focus-input2::after {
 }
 .social-list {
   text-align: center;
+}
+.contact-content {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 /* MEDIA QUERIES */
 /* Custom, iPhone Retina */
@@ -1137,6 +1141,10 @@ and (max-device-width : 667px) { /* STYLES GO HERE */
     }
     .footer-img {
       max-width: 25%;
+    }
+
+    #contact {
+        height: 100% !important;
     }
 }
 
@@ -1329,6 +1337,9 @@ and (max-device-width : 568px) {
     }
     .footer-img {
       max-width: 25%;
+    }
+    #contact {
+        height: 100% !important;
     }
 }
 /* Extra Small Devices, Phones */
@@ -1541,8 +1552,6 @@ Heart beat
     .contact-content {
         padding-left: 12rem !important;
         padding-right: 12rem !important;
-        margin-top: auto;
-        margin-bottom: auto;
     }
     .container-contact2 {
         padding-bottom: 100pt;
