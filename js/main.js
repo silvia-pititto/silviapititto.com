@@ -1,6 +1,6 @@
 /*!
  * silviapititto.com
- * Copyright 2019 Silvia Pititto
+ * Copyright 202 Silvia Pititto
  *
  */
 (function ($) {
@@ -10,13 +10,27 @@
   FastClick.attach(document.body);
 
   // Stop the animations while the document is loading
-  document.body.classList.add('loading');
-  window.addEventListener('load', showPage, false);
+  // document.body.classList.add('loading');
+  // window.addEventListener('load', showPage, false);
 
+  // MARK: - Functions
   function showPage() {
     document.body.classList.remove('loading');
   }
 
+  function animateHome(completion) {
+    $('.spinner-container').fadeOut(function() {
+      $('#logo').css('opacity', 1);
+      $('.skill-list').css('opacity', 1);
+      completion();
+    });
+  }
+  
+  function setBackgroundImage() {
+    $('.header').addClass('background-header');
+  }
+
+  // DOCUMENT READY
   $(document).ready(function() {
     $("a.page-scroll").click(function(event) {
       //            event.preventDefault();
@@ -282,19 +296,10 @@
     });
   }
 
-  function animateHome(completion) {
-    $('.spinner-container').fadeOut(function() {
-      $('#logo').css('opacity', 1);
-      $('.skill-list').css('opacity', 1);
-      completion();
-    });
-  }
+  
 
-  function setBackgroundImage() {
-    $('.header').addClass('background-header');
-  }
+  
 
 });
-
 
 })(jQuery);
