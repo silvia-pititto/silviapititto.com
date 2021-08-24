@@ -18,17 +18,17 @@
     document.body.classList.remove('loading');
   }
 
-  function animateHome(completion) {
-    $('.spinner-container').fadeOut(function() {
-      $('#logo').css('opacity', 1);
-      $('.skill-list').css('opacity', 1);
-      completion();
-    });
-  }
+  // function animateHome(completion) {
+  //   $('.spinner-container').fadeOut(function() {
+  //     $('#logo').css('opacity', 1);
+  //     $('.skill-list').css('opacity', 1);
+  //     completion();
+  //   });
+  // }
   
-  function setBackgroundImage() {
-    $('.header').addClass('background-header');
-  }
+  // function setBackgroundImage() {
+  //   $('.header').addClass('background-header');
+  // }
 
   // DOCUMENT READY
   $(document).ready(function() {
@@ -148,7 +148,7 @@
     };
 
     var sr =  ScrollReveal();
-    sr.reveal(".reveal-home, .reveal-logo", logoReveal, 50);
+    // sr.reveal(".reveal-home, .reveal-logo", logoReveal, 50);
     sr.reveal(".reveal-footer, .reveal-about , .reveal-work", fooReveal);
 
   /* Swiper */
@@ -213,7 +213,7 @@
   var swiper2 = new Swiper(".s3", swiperOptions);
   var swiper1 = new Swiper(".s1", swiperOptions);
 
-  /* Focus Contact2 */
+  /* Focus Contact */
   $(".input2").each(function(){
     $(this).on("blur", function(){
       if($(this).val().trim() != "") {
@@ -224,7 +224,7 @@
     });
   });
 
-  /* Validate */
+  /* Validatiom */
   var name = $('.validate-input input[name="name"]');
   var email = $('.validate-input input[name="email"]');
   var message = $('.validate-input textarea[name="message"]');
@@ -232,22 +232,18 @@
 
   $(".validate-form").on("submit",function(){
     var check = true;
-
     if($(name).val().trim() == "") {
       showValidate(name);
       check=false;
     }
-
     if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
       showValidate(email);
       check=false;
     }
-
     if($(message).val().trim() == ""){
       showValidate(message);
       check=false;
     }
-
     return check;
   });
 
@@ -267,39 +263,7 @@
     var thisAlert = $(input).parent();
     $(thisAlert).removeClass("alert-validate");
   }
-
-
-  //create image to preload:
-  var imgPreload = new Image();
-  $(imgPreload).attr({
-    src: "http://silviapititto.com/img/home/background.jpg"
-  });
-
-  //check if the image is already loaded (cached):
-  if (imgPreload.complete || imgPreload.readyState === 4) {
-    //image loaded:
-    animateHome(function() {
-      setBackgroundImage();
-    });
-  } else {
-    //go fetch the image:
-    $(imgPreload).load(function (response, status, xhr) {
-      animateHome(function() {
-        if (status == 'error') {
-          //image could not be loaded:
-          $('.header').addClass('background-header-default');
-        } else {
-          //image loaded:
-          setBackgroundImage();
-        }
-      });
-    });
-  }
-
   
-
-  
-
 });
 
 })(jQuery);

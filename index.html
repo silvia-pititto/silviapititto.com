@@ -11,7 +11,9 @@
   <title>Silvia Pititto</title>
 
   <!-- Styles -->
-  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- TODO: REPLACE THIS WITH DOWNLOADED ONE! -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="vendor/swiper/swiper.min.css">
   <link href="css/main.css" rel="stylesheet">
 
@@ -50,22 +52,26 @@
   </div>
   <!-- Header -->
   <header id="home" class="header">
-    <div class="container-fluid">
-      <div class="row">
+    <ul id="slideshow"> <li></li> <li></li><li></li><li></li><li></li></ul> 
+    <div class="container-fluid equal-height">
+      <div class="row h-100">
         <div class="spinner-container">
           <svg width="16px" height="12px">
             <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
             <polyline id="front" class="animated" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
           </svg>
         </div>
-        <div class="col-md-12 text-vertical-center header-container">
-          <img id="logo" src="img/home/logo.png" class="img-fluid reveal-logo" alt="logo"/>
+        <div class="col-12 text-vertical-center header-container">
+          <img id="logo" src="img/home/homepage_logo.png" class="img-fluid reveal-logo" alt="logo"/>
         </div>
-        <div class="bottom-align-text col-lg-12">
+        <div class="col-12 bottom-align-text">
           <ul class="list-inline text-center skill-list">
             <li class="list-inline-item reveal-home">Mobile &amp; Web Development</li>
+            <li class="list-inline-item reveal-home"><b>/</b></li>
             <li class="list-inline-item reveal-home">UX Design</li>
+            <li class="list-inline-item reveal-home"><b>/</b></li>
             <li class="list-inline-item reveal-home">Photography</li>
+            <li class="list-inline-item reveal-home"><b>/</b></li>
             <li class="list-inline-item reveal-home">Singer-Songwriter</li>
           </ul>
         </div>
@@ -1117,7 +1123,9 @@
     </div>
   </div>
   <script src="vendor/jquery/jquery.js"></script>
-  <script src="vendor/bootstrap/bootstrap.min.js"></script>
+  <!-- <script src="vendor/bootstrap/bootstrap.min.js"></script> -->
+  <!-- TODO: UPDATE THIS WITH THE DOWNLOADED ONE -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <script src="vendor/swiper/swiper.min.js"></script>
   <script src="vendor/fastclick/fastclick.js"></script>
   <script src="vendor/easing/easing.js"></script>

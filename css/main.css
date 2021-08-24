@@ -28,7 +28,7 @@ a{
     text-decoration: none !important;
 }
 .h-100 {
-  height: 100%;
+    height: 100%;
 }
 /* Custom Button Styles */
 .btn-dark {
@@ -57,7 +57,7 @@ a{
     height: 100vh;
 }
 #about {
-  height: 100vh !important;
+    height: 100vh !important;
 }
 #about.container-fluid {
   padding: 0;
@@ -68,94 +68,92 @@ a{
 .header {
     display: table;
     position: relative;
-    background: #E5E5E5;
+    background: #302F2F;
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
 }
-.background-header {
-  background: url("http://silviapititto.com/img/home/background.jpg") no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  -webkit-transition: fadein 0.5s;
-  -moz-transition: fadein 0.5s;
-  -o-transition: fadein 0.5s;
-  transition: fadein 0.5s;
-  padding-top: 16% !important;
-}
-.background-header-default {
-  background-color: coral;
-  background: linear-gradient(45deg, #FF4B50, #FF753E, #FFFC65);
-  -webkit-transition: fadein 0.5s;
-  -moz-transition: fadein 0.5s;
-  -o-transition: fadein 0.5s;
-  transition: fadein 0.5s;
-  padding-top: 16% !important;
-}
-/* Fade In Animations */
-@keyframes fadein {
-    from {
-        opacity:0;
+#slideshow { 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline !important;
+  }
+  #slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+  /*   background-position: 50% 50%; */
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+  }
+  #slideshow li:nth-child(1) { 
+    background-image: url(https://images.unsplash.com/photo-1485949870685-e1d7ea5a1c53);
+  }
+  #slideshow li:nth-child(2) { 
+    background-image: url(https://images.unsplash.com/photo-1470922792794-b15b12d20e80);
+    animation-delay:10s;
+  }
+  #slideshow li:nth-child(3) { 
+    background-image: url(https://images.unsplash.com/photo-1484248970913-02d5ad63477f);
+    animation-delay:20s;
+  }
+  #slideshow li:nth-child(4) { 
+    background-image: url(https://images.unsplash.com/photo-1466790003688-001bbee8ec1a);
+    animation-delay:30s;
+  }
+  #slideshow li:nth-child(5) { 
+    background-image: url(https://images.unsplash.com/photo-1484447089447-a742155835e2);
+    animation-delay:40s;
+  }
+  @keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
     }
-    to {
-        opacity:1;
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
     }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
+    20% {
+      opacity: 1;
     }
-    to {
-        opacity:1;
+    30% {
+      opacity: 0;
     }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+  }
 
 .header-container{
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 #logo{
     margin-bottom: 22%;
-    opacity: 0;
+    opacity: 1;
 }
-header#home.header{
-    padding-top: 10%;
-}
-.skill-list{
+.skill-list {
     color: white;
     margin-bottom: 0px;
     font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    opacity: 0;
+    font-weight: 400;
+    opacity: 1;
 }
 .skill-list li{
     margin-left: 3px;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.50);
 }
-.skill-list li:first-child:after,
-.skill-list li:nth-child(2):after{
-    content: "";
-    display: inline-block;
-    background: url(../img/home/dash.png) no-repeat top right;
-    width: 36px;
-    height: 10px;
+.equal-height {
+    height: 100% !important;
 }
 /* About */
 .about {
@@ -240,7 +238,6 @@ header#home.header{
     color: white;
     opacity: 0;
     display: block;
-    /*background: rgba(240, 95, 64, 0.9);*/
     background: rgba(234, 69, 73, 1);
     position: absolute;
     bottom: 0;
@@ -341,7 +338,7 @@ footer {
 
   .bottom-align-text {
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     right: 0;
   }
 }
@@ -1057,17 +1054,12 @@ and (max-device-width : 667px) { /* STYLES GO HERE */
         -webkit-overflow-scrolling: touch;
     }
     /* HOME */
-    #home{
+    /* #home{
         padding-top: 50% !important;
-    }
+    } */
     #logo{
         margin-bottom: 30%;
     }
-    /* .skill-list li:first-child:after,
-    .skill-list li:nth-child(2):after{
-        content: "";
-        display: none;
-    } */
     .list-inline-item:not(:last-child){
         margin-right: 0;
     }
@@ -1157,20 +1149,15 @@ and (max-device-width : 736px) {
         -webkit-overflow-scrolling: touch;
     }
     /* HOME */
-    #home{
+    /* #home{
         padding-top: 50% !important;
-    }
+    } */
     #logo{
         margin-bottom: 30%;
     }
     .list-inline-item {
       padding-bottom: 15% !important;
     }
-    /* .skill-list li:first-child:after,
-    .skill-list li:nth-child(2):after{
-        content: "";
-        display: none;
-    } */
     .list-inline-item:not(:last-child){
         margin-right: 0;
     }
@@ -1253,20 +1240,15 @@ and (max-device-width : 568px) {
         -webkit-overflow-scrolling: touch;
     }
     /* HOME */
-    #home{
+    /* #home{
         padding-top: 50% !important;
-    }
+    } */
     #logo{
         margin-bottom: 30%;
     }
     .list-inline-item {
       padding-bottom: 15% !important;
     }
-    /* .skill-list li:first-child:after,
-    .skill-list li:nth-child(2):after{
-        content: "";
-        display: none;
-    } */
     .list-inline-item:not(:last-child){
         margin-right: 0;
     }
@@ -1350,16 +1332,11 @@ and (max-device-width : 568px) {
         -webkit-overflow-scrolling: touch;
     }
     /* HOME */
-    #home{
+    /* #home{
         padding-top: 50% !important;
-    }
+    } */
     #logo{
         margin-bottom: 30%;
-    }
-    .skill-list li:first-child:after,
-    .skill-list li:nth-child(2):after{
-        content: "";
-        display: none;
     }
     .list-inline-item:not(:last-child){
         margin-right: 0;
@@ -1539,10 +1516,6 @@ Heart beat
         padding-top: 8rem !important;
         padding-bottom: 2rem !important;
     }
-    /* .portfolio-content {
-        padding-left: 12rem !important;
-        padding-right: 12rem !important;
-    } */
     .m-bottom {
         margin-bottom: 2.5rem;
     }
