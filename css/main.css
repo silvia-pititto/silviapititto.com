@@ -210,6 +210,7 @@ a{
 .portfolio {
     padding: 3rem 0 0 0;
     background-color:#F7F7F7;
+    height: 100vh !important;
 }
 .img-portfolio{
     margin: 0 auto;
@@ -223,15 +224,11 @@ a{
 .img-portfolio:focus{
     opacity: 0;
 }
-.portfolio-content,
-.no-padding {
-    margin: 0 !important;
-    padding: 0 !important;
-}
 .portfolio-box {
     position: relative;
     display: block;
     max-width: 650px;
+    min-width: 200px;
     margin: 0 auto;
 }
 .portfolio-box .portfolio-box-caption {
@@ -258,13 +255,13 @@ a{
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-  padding: 0 15px;
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    padding: 0 15px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-/*  text-transform: uppercase;*/
-  font-weight: 600;
-  font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 12px !important;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   font-size: 18px;
@@ -411,7 +408,7 @@ input{
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.9);
+    background: rgba(48,47,47,0.9);
     z-index: 1000;
 }
 
@@ -456,7 +453,6 @@ input{
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
     font-family: 'Montserrat', Arial, sans-serif;
-    /*text-transform:uppercase;*/
 }
 
 .overlay ul li a:hover,
