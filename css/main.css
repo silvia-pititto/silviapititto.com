@@ -96,23 +96,23 @@ a{
     animation: imageAnimation 50s linear infinite; 
   }
   #slideshow li:nth-child(1) { 
-    background-image: url(https://images.unsplash.com/photo-1485949870685-e1d7ea5a1c53);
+    background-image: url(../img/home/background.png);
   }
   #slideshow li:nth-child(2) { 
-    background-image: url(https://images.unsplash.com/photo-1470922792794-b15b12d20e80);
-    animation-delay:10s;
+    background-image: url(../img/home/background_2.png);
+    animation-delay: 5s;
   }
   #slideshow li:nth-child(3) { 
-    background-image: url(https://images.unsplash.com/photo-1484248970913-02d5ad63477f);
-    animation-delay:20s;
+    background-image: url(../img/home/background_3.png);
+    animation-delay: 10s;
   }
   #slideshow li:nth-child(4) { 
-    background-image: url(https://images.unsplash.com/photo-1466790003688-001bbee8ec1a);
-    animation-delay:30s;
+    background-image: url(../img/home/background_4.png);
+    animation-delay: 15s;
   }
   #slideshow li:nth-child(5) { 
-    background-image: url(https://images.unsplash.com/photo-1484447089447-a742155835e2);
-    animation-delay:40s;
+    background-image: url(../img/home/background_5.png);
+    animation-delay: 20s;
   }
   @keyframes imageAnimation { 
     0% { 
@@ -132,13 +132,13 @@ a{
   }
 
 .header-container{
-    padding-left: 0;
-    padding-right: 0;
+    /* padding-left: 0;
+    padding-right: 0; */
     margin-bottom: auto;
     margin-top: auto;
 }
 #logo{
-    margin-bottom: 22%;
+    margin-bottom: 5%;
     opacity: 1;
 }
 .skill-list {
@@ -452,7 +452,7 @@ input{
     text-decoration:none;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: Montserrat, sans-serif;
 }
 
 .overlay ul li a:hover,
@@ -511,6 +511,7 @@ input{
     top:0;
     width:100%;
     z-index:1000; /* Just to keep it at the very top */
+    padding: 0;
 }
 .project-title{
     /* Remix: */
@@ -1037,6 +1038,14 @@ textarea.input2 + .focus-input2::after {
 .contact-content {
     margin-top: auto;
     margin-bottom: auto;
+}
+.monserrat-16 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+}
+.md-img {
+  max-width: 60% !important;
 }
 /* MEDIA QUERIES */
 /* Custom, iPhone Retina */

@@ -50,7 +50,7 @@
   </div>
   <!-- Header -->
   <header id="home" class="header">
-    <ul id="slideshow"> <li></li> <li></li><li></li><li></li><li></li></ul> 
+    <ul id="slideshow"> <li></li> <li></li> <li></li> <li></li></ul> 
     <div class="container-fluid equal-height">
       <div class="row h-100">
         <!-- TODO: UPDATE THIS SPINNER TO WORK WITH NEW WAYS -->
@@ -60,7 +60,7 @@
             <polyline id="front" class="animated" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
           </svg>
         </div> -->
-        <div class="col-12 text-vertical-center header-container">
+        <div class="col-12 text-vertical-center header-container px-xs-15 px-sm-15 px-md-15">
           <img id="logo" src="img/home/homepage_logo.png" class="img-fluid reveal-logo" alt="logo"/>
         </div>
         <div class="col-12 bottom-align-text">
@@ -84,7 +84,7 @@
         <div class="col-sm-6 background-grey text-center">
           <img src="img/about/About_label.png" class="img-fluid section-title-img reveal-about" alt="About"/>
           <div class="text-center background-white">
-            <img class="profile-img float-right" src="img/about/SilviaPititto_silviapititto.com.png" alt=""/>
+            <img class="profile-img float-right" src="img/about/SilviaPititto.png" alt=""/>
           </div>
         </div>
         <div class="col-sm-6 text-overflow px-5 text-justify about-content">
@@ -97,7 +97,7 @@
               <li>Photography & Design</li>
             </ul>
             <p class="px-5">
-              I currently work as a Full Stack Product Engineer at <a class="link" target="_blank" href="https://www.securebroadcast.com/">Secure Broadcast</a> where I develop products from feature discovery, design research, development and feedback following the agile methodology.<br><br>
+              I currently work as a Full Stack Product Engineer at <a class="link" target="_blank" href="https://www.vmltechnology.com/">VML Technology</a> where I develop products from feature discovery, design research, development and feedback following the agile methodology.<br><br>
               Moreover, I lead regular <em>Design Review</em> meetings with the Design team to ensure development and design goals are aligned with the user's and company's objectives.<br><br>
               I recently mentored at the successful first edition of <a class="link" target="_blank" href="http://learnto.charged.city">LearnTo iOS</a>, an eight-week iOS development course for students and professionals. I also volunteer at <a class="link" target="_blank" href="https://djangogirls.org/belfast/">Django Girls Belfast</a> to support and inspire other women in technology.<br><br>
               A keen attention to detail, user research, creativity, and problem solving are an essential part of my methodical approach, allowing me to create unique digital products to suit the user’s needs.<br><br>
@@ -123,14 +123,14 @@
         <div class="row no-gutters">
           <div class="col-lg-3 col-md-6 col-sm-6">
             <a href="#" class="portfolio-box">
-              <img class="img-fluid" src="img/portfolio/thumbnails/portfolio-6.jpg" alt="Sylvy">
+              <img class="img-fluid" src="img/portfolio/thumbnails/portfolio-10.jpg" alt="Sylvy">
               <div id="sylvy" class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-name">
                     Sylvy
                   </div>
                   <div class="project-category text-faded">
-                    Singer-Songwriting / Photography / Graphic Design / Video
+                    Singer-Songwriter / Photography / Media
                   </div>
                 </div>
               </div>
@@ -139,13 +139,13 @@
           <div class="col-lg-3 col-md-6 col-sm-6">
             <a href="#" class="portfolio-box">
               <img class="img-fluid" src="img/portfolio/thumbnails/portfolio-4.png" alt="VML Technology">
-              <div id="secure-broadcast" class="portfolio-box-caption">
+              <div id="vml-technology" class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-name">
                     VML Technology
                   </div>
                   <div class="project-category text-faded">
-                    iOS & Mac Development
+                    iOS Development / Product Design
                   </div>
                 </div>
               </div>
@@ -160,7 +160,7 @@
                     Picseed
                   </div>
                   <div class="project-category text-faded">
-                    iOS App / UI & UX Design
+                    iOS App / UX Design & Research
                   </div>
                 </div>
               </div>
@@ -190,7 +190,7 @@
                     Water Squirrel
                   </div>
                   <div class="project-category text-faded">
-                    Game App / UI Design
+                    Game App / UX Design
                   </div>
                 </div>
               </div>
@@ -288,22 +288,18 @@
             <div class="container-contact2">
               <div class="wrap-contact2">
                 <form action="https://formspree.io/hello.silviapititto@gmail.com" method="POST" class="contact2-form validate-form">
-
                   <div class="wrap-input2 validate-input" data-validate="Name is required">
                     <input class="input2" type="text" name="name">
                     <span class="focus-input2" data-placeholder="NAME"></span>
                   </div>
-
                   <div class="wrap-input2 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
                     <input class="input2" type="text" name="email">
                     <span class="focus-input2" data-placeholder="EMAIL"></span>
                   </div>
-
                   <div class="wrap-input2 validate-input" data-validate = "Message is required">
                     <textarea style="resize: none;" class="input2" name="message"></textarea>
                     <span class="focus-input2" data-placeholder="MESSAGE"></span>
                   </div>
-
                   <div class="container-contact2-form-btn">
                     <div class="wrap-contact2-form-btn">
                       <div class="contact2-form-bgbtn"></div>
@@ -315,8 +311,12 @@
                 </form>
               </div>
             </div><!-- / Contact Form -->
-
             <!-- Social icons -->
+            <div class="row monserrat-16">
+              <div class="col text-center p-3">
+                <p>You can also find me on:</p>
+              </div>
+            </div>
             <div class="row contact-row ">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
                 <ul class="social-list">
@@ -403,6 +403,90 @@
     </div>
   </div>
   <!-- Projects -->
+  <!-- Sylvy -->
+  <div id="sylvy-project" class="container-fluid project-container">
+    <div class="row no-gutters project-row">
+      <div class="col-lg-12 right project-info-container text-center background-light">
+        <!-- Close button -->
+        <a class="close-project-btn">
+          <img src="img/icons/close_btn_red.png" alt="close btn" class="img-fluid"/>
+        </a><!--/ Close button -->
+        <!-- Project Info -->
+        <h1 class="project-title">Sylvy</h1>
+        <h5 class="project-type">Singer-Songwriter / Photography / Media</h5>
+        <p class="project-description para-grey">
+          After playing in bands since my teens, I decided to start my solo music project called Sylvy. <br>
+          I released a debut EP called “The Starry-Eyed” in 2020.
+        </p>
+        <p class="project-description para-grey">
+            Lately I’ve been learning new instruments and I hope to perform live soon when the world allows it again. 
+        </p>
+        <p class="project-description para-grey">You can follow my music journey on social media: </p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a class="link" target="_blank" href="https://www.instagram.com/sylvymusic/">Instagram</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="link" target="_blank" href="https://sylvy.bandcamp.com/releases">Bandcamp</a>
+          </li>
+          <li class="list-inline-item ">
+            <a class="link" target="_blank"  href="https://www.youtube.com/channel/UC-cKmJ66ZuVw31X6dlEI2MQ">Youtube</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="link" href="https://www.facebook.com/sylvymusic">Facebook</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="link" target="_blank"  href="https://twitter.com/sylvy_music">Twitter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 project-info-container text-center background-grey">
+        <h2 class="para-heading heading-light">THE STARRY-EYED</h2>
+        <p class="project-description para-light">
+          "The Starry-Eyed" is an honest soul-touching ode to love with all its ups and downs. <br> 
+          The EP was recorded in Italy with a couple of friends and produced by Nikolas Pumilia for Himself Records. 
+        </p>
+      </div>
+    </div>
+    <div class="row no-gutters text-center background-light">
+      <div class="col-8">
+        <img src="img/portfolio/work/sylvy/sylvy_the_starry_eyed.png" alt="The Starry-Eyed Artwork" class="img-fluid mx-auto"/>
+      </div>
+      <div class="col-2 text-center m-auto">
+        <iframe class="mx-auto" src="https://open.spotify.com/embed/album/23fww457ibykOo4AgMoSDl" width="100%" height="400" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+    </div>
+    <div class="row"> 
+      <div class="col-lg-12 project-info-container text-center background-grey">
+        <h2 class="para-heading heading-light">PROMO PHOTOGRAPHY</h2>
+        <p class="project-description para-light">
+          Artwork and promo photography by me. 
+        </p>
+      </div>
+    </div>  
+    <div class="row no gutters background-grey">
+      <div class="col text-center">
+        <img src="img/portfolio/work/sylvy/sylvy_1.jpg" class="img-fluid" alt="sylvy_1"/>
+        <img src="img/portfolio/work/sylvy/sylvy_2.jpg" class="img-fluid" alt="sylvy_2"/>
+        <img src="img/portfolio/work/sylvy/sylvy_3.jpg" class="img-fluid" alt="sylvy_3"/>
+      </div>
+    </div>       
+    <div class="row logo-container">
+      <div class="col text-center">
+        <p class="para-grey">Sylvy</p>
+        <p class="para-grey">Links:
+          <a class="link" target="_blank" href="https://www.instagram.com/sylvymusic/">Instagram</a>,
+          <a class="link" target="_blank" href="https://sylvy.bandcamp.com/releases">Bandcamp</a>,
+          <a class="link" target="_blank"  href="https://www.youtube.com/channel/UC-cKmJ66ZuVw31X6dlEI2MQ">Youtube</a>,
+          <a class="link" href="https://www.facebook.com/sylvymusic">Facebook</a>,
+          <a class="link" target="_blank"  href="https://twitter.com/sylvy_music">Twitter</a>
+        </p>
+        <a><img src="img/icons/logo_footer.png" class="img-fluid logo-footer" alt="logo"/></a>
+      </div>
+    </div>      
+  </div>
   <!-- Remix -->
   <div id="remix-project" class="container-fluid project-container no-padding">
     <div class="row no-gutters project-row">
@@ -564,7 +648,7 @@
     </div>
   </div>
   <!-- VML Technology -->
-  <div id="secure-broadcast-project" class="container-fluid project-container no-padding">
+  <div id="vml-technology-project" class="container-fluid project-container no-padding">
     <div class="row no-gutters project-row">
       <div class="col-lg-12 right project-info-container text-center background-light">
         <!-- Close button -->
@@ -573,36 +657,34 @@
         </a><!--/ Close button -->
         <!-- Project Info -->
         <h1 class="project-title">VML Technology</h1>
-        <h5 class="project-type">iOS & Mac Development</h5>
+        <h5 class="project-type">iOS Development / Product Design</h5>
         <!-- <h2 class="para-heading heading-grey">TEAM WORK</h2> -->
         <p class="project-description para-grey">
-          Working as part of the agile development team, I am responsible for developing new features for the company’s app suite (iOS and Mac apps) which allow users to manage and edit videos using the patented <a class="link" target="_blank" href="https://www.vmltechnology.com/">VML Technology</a>.
+          Working as part of the agile development team, I am responsible for developing new features for the company’s iOS app suite which allow users to manage and edit videos using the patented video <a class="link" target="_blank" href="https://www.vmltechnology.com/">VML Technology</a>.
         </p>
         <p class="project-description para-grey">
-          I also lead weekly design review meetings with the Design team in order to feedback on the feasibility of designs and ensure that our teams’ objectives are aligned with the user’s and company’s goals.
+          I'm involved in the product development and lead regular <i>Design Reviews</i> with the Design team in order to feedback on the feasibility of designs and ensure that our teams’ objectives are aligned with the user’s and company’s goals.
         </p>
         <p class="project-description para-grey">
-          Development involves also building new features full stack at times and maintaining the existing codebase. Additionally, unit tests are added along with new code both on the front end and back end (Django).
+          I'm also responsible for organising a <i>Show & Share</i> and <i>Retrospectives</i> within the development team at the end of every sprint.
         </p>
       </div>
       <div class="col-lg-12 project-info-container text-center background-red">
-        <h2 class="para-heading heading-light">APP DEVELOPMENT</h2>
+        <h2 class="para-heading heading-light">PRODUCT DEVELOPMENT</h2>
         <p class="project-description para-light">
-          I contributed to the planning and development of the company’s universal iOS app for managing and editing video content using the patented VML Technology.
+          Development involves also building new features full stack at times and maintaining the existing codebase. Additionally, unit tests are added along with new code both on the front end and back end (Django).
+        </p>
+        <p class="project-description para-light">
+          I contribute to the planning and development of the company’s universal iOS app for managing and editing video content using the patented VML Technology.
         </p>
         <p class="project-description para-light">
           We frequently validate requirements, refine and enhance the products’ user experience for customers thanks to regular feedback and communication with the Design team.
         </p>
-        <p class="project-description para-light">
-          The most recent project I’ve been working on is <br>
-          It is at times challenging but interesting learning process especially when customising AppKit components.
-        </p>
       </div>
     </div>
-    <div class="row p-5 text-center">
+    <div class="row text-center background-light">
       <div class="col">
-        <img src="img/portfolio/work/sb/sb_editing_ipad.png" alt="VML iOS App" class="img-fluid mx-auto"/>
-        <img src="img/portfolio/work/sb/iphone-graphic.png" alt="VML iOS App iPad" class="img-fluid mx-auto"/>
+        <img class="md-img" src="img/portfolio/work/vml/VML_apps.png" alt="VML iOS App" class="img-fluid mx-auto"/>
       </div>
     </div>
     <div class="row logo-container">
@@ -691,7 +773,7 @@
         </a><!--/ Close button -->
         <!-- Project Info -->
         <h1 class="project-title">Picseed</h1>
-        <h5 class="project-type">iOS App / UI & UX Design</h5>
+        <h5 class="project-type">iOS App / UX Design & Research</h5>
         <p class="project-description para-grey">
           <em>Picseed</em> is an iOS App which allows to capture, collect and share inspiration.<br>
           Content is tailored to the user’s interests to give a personalised experience, inspire and motivate them.
