@@ -213,7 +213,7 @@
   var message = $('.validate-input textarea[name="message"]');
 
 
-  $(".validate-form").on("submit",function(){
+  $(".validate-form").on("submit", function(){
     var check = true;
     if($(name).val().trim() == "") {
       showValidate(name);
