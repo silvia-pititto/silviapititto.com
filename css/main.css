@@ -544,8 +544,8 @@ input{
 }
 .project-info-container{
     padding-bottom:2rem;
-    padding-left:18rem !important;
-    padding-right:18rem !important; /* REMOVE THIS FOR MOBILE!!! */
+    padding-left: 20% !important;
+    padding-right: 20% !important; /* REMOVE THIS FOR MOBILE!!! */
 }
 .project-info-container:first-child{
     padding-top:5rem;
