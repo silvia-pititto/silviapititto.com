@@ -16,19 +16,22 @@
   // DOCUMENT READY
   $(document).ready(function () {
     $("a.page-scroll").click(function (event) {
-      //            event.preventDefault();
-      //            var $anchor = $(this);
-      var $anchor = $(this).attr("href");
-      $("html, body")
-        .stop()
-        .animate(
-          {
-            scrollTop: $($anchor).offset().top,
-          },
-          1250,
-          "easeInOutExpo"
-        );
+      // Remove scroll snap
+      $("html").css("scroll-snap-type", "none");
       event.preventDefault();
+      const $anchor = $(this).attr("href");
+      // animate
+      $("html").animate(
+        {
+          scrollTop: $($anchor).offset().top,
+        },
+        1250,
+        "easeInOutExpo",
+        function () {
+          // Resume scroll snap
+          $("html").css("scroll-snap-type", "y mandatory");
+        }
+      );
     });
 
     //#to-top button appears after scrolling
@@ -66,11 +69,11 @@
       $(pageId).fadeToggle("fast", "linear", function () {
         if (pageId !== "#site-notice" && !isClosing) {
           // stop the scroll on the bottom page (toggle scroll)
-          $("html").css("overflow", "hidden");
+          $("html").css("overflow-y", "hidden");
           $(pageId).css("overflow-y", "scroll");
         } else if (isClosing) {
           // restore the scroll
-          $("html").css("overflow-y", "auto");
+          $("html").css("overflow-y", "scroll");
           $("html").css("overflow-x", "hidden");
         }
         return;
@@ -93,9 +96,9 @@
 
       var projectId,
         projectName = "";
-      var isClosing = false;
-      var target = $(e.currentTarget);
-      var targetClass = target.attr("class");
+      const isClosing = false;
+      const target = $(e.currentTarget);
+      const targetClass = target.attr("class");
 
       if (targetClass === "portfolio-box-caption") {
         // open project
@@ -122,7 +125,7 @@
     });
 
     /* Scroll Reveal */
-    var fooReveal = {
+    const fooReveal = {
       delay: 200,
       viewFactor: 0.6,
       easing: "ease-in-out",
@@ -130,22 +133,22 @@
       mobile: true,
     };
 
-    var logoReveal = {
+    const logoReveal = {
       delay: 210,
       easing: "ease-in", //"cubic-bezier(0.075, 0.82, 0.165, 1)",
       mobile: true,
     };
 
-    var sr = ScrollReveal();
+    const sr = ScrollReveal();
     // sr.reveal(".reveal-home, .reveal-logo", logoReveal, 50);
     sr.reveal(".reveal-footer, .reveal-about , .reveal-work", fooReveal);
 
     /* Swiper */
-    var spaceBetweenSlides = 20;
-    var slidesPerView = 2;
-    var minSpaceBetweenSlides = 10;
-    var minSlidesPerView = 1;
-    var breakpoints = {
+    const spaceBetweenSlides = 20;
+    const slidesPerView = 2;
+    const minSpaceBetweenSlides = 10;
+    const minSlidesPerView = 1;
+    const breakpoints = {
       // when window width is <= 320px
       320: {
         slidesPerView: minSlidesPerView,
@@ -180,7 +183,7 @@
       },
     };
 
-    var swiperOptions = {
+    const swiperOptions = {
       slidesPerView: slidesPerView,
       spaceBetween: spaceBetweenSlides,
       centeredSlides: true,
@@ -197,9 +200,9 @@
       breakpoints: breakpoints,
     };
 
-    var swiper2 = new Swiper(".s2", swiperOptions);
-    var swiper2 = new Swiper(".s3", swiperOptions);
-    var swiper1 = new Swiper(".s1", swiperOptions);
+    const s1 = new Swiper(".s1", swiperOptions);
+    const s2 = new Swiper(".s2", swiperOptions);
+    const s3 = new Swiper(".s3", swiperOptions);
 
     /* Focus Contact */
     $(".input2").each(function () {
@@ -213,9 +216,9 @@
     });
 
     /* Validatiom */
-    var name = $('.validate-input input[name="name"]');
-    var email = $('.validate-input input[name="email"]');
-    var message = $('.validate-input textarea[name="message"]');
+    const name = $('.validate-input input[name="name"]');
+    const email = $('.validate-input input[name="email"]');
+    const message = $('.validate-input textarea[name="message"]');
 
     $(".validate-form").on("submit", function () {
       var check = true;
