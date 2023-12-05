@@ -1,6 +1,6 @@
 /*
  * silviapititto.com
- * Copyright 2020 Silvia Pititto
+ * Copyright 2023 Silvia Pititto
  *
  */
 /* Global Styles */
@@ -346,8 +346,13 @@ footer {
 #to-top {
   display: none;
   position: fixed;
-  bottom: 5px;
-  right: 5px;
+  bottom: 1rem;
+  right: 1.5rem;
+  background-image: url("../img/svg/arrow_up.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 22.49px;
+  width: 40px;
 }
 @media (min-width: 768px) {
   .row {
@@ -399,22 +404,16 @@ footer {
   top: 0;
   left: 100%;
 }
-/* To top arrow */
-.not-selected .fa-angle-up,
-#to-top {
-  /*color: #302F2F !important;*/
-  color: #ea4549 !important;
-}
-.selected .fa-angle-up,
-#to-top:hover {
-  color: #ea4549 !important;
-}
 /* Overlay Menu */
 input {
   display: none;
 }
-.lower label:hover {
+.lower label:hover,
+.overlay label:hover,
+.close-project-btn:hover,
+#close-btn:hover {
   cursor: pointer;
+  opacity: 70%;
 }
 .lower {
   color: #ea4549;
@@ -422,6 +421,9 @@ input {
   z-index: 1000;
   top: 1rem;
   right: 1rem;
+}
+.lower label {
+  margin-right: 1.5rem;
 }
 .overlay {
   position: fixed;
@@ -498,7 +500,23 @@ input {
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
-
+.menu-btn {
+  background-image: url("../img/svg/menu.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+  height: 30px;
+  width: 37px;
+}
+.x-btn {
+  background-image: url("../img/svg/close_btn_red.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  margin-right: 1.5rem;
+}
 .overlay-hugeinc nav {
   -moz-perspective: 300px;
 }

@@ -16,14 +16,9 @@
     <!-- Styles -->
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
-    <link href="css/main.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
 
     <!-- Custom Fonts -->
-    <link
-      href="vendor/font-awesome/css/font-awesome.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Rosario|Open+Sans"
       rel="stylesheet"
@@ -38,37 +33,50 @@
     <link
       rel="icon"
       type="image/png"
-      href="favicons/favicon-32x32.png"
       sizes="32x32"
+      href="favicons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
-      href="favicons/favicon-16x16.png"
-      sizes="16x16"
+      sizes="194x194"
+      href="/favicon-194x194.png"
     />
-    <link rel="manifest" href="favicons/manifest.json" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="favicons/safari-pinned-tab.svg"
-      color="#5bbad5"
+      color="#ea4548"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="vendor/select2/select2.min.css"
-    />
+    <meta name="apple-mobile-web-app-title" content="silviapititto.com" />
+    <meta name="application-name" content="silviapititto.com" />
+    <meta name="msapplication-TileColor" content="#ea4548" />
+    <meta name="theme-color" content="#302f2f" />
   </head>
   <body>
     <!-- Navigation -->
     <input type="checkbox" id="menu" />
     <div class="lower">
-      <label for="menu"><i class="fa fa-bars fa-fw fa-2x"></i></label>
+      <label for="menu">
+        <i class="menu-btn"></i>
+      </label>
     </div>
-    <!--<a id="menu-toggle" href="#" class="btn toggle"><i class="fa fa-bars fa-fw fa-2x"></i></a>-->
     <div class="overlay overlay-hugeinc">
-      <label for="menu"><i class="fa fa-times fa-fw fa-3x"></i></label>
+      <label for="menu">
+        <i class="close-menu-btn x-btn"></i>
+      </label>
       <nav>
         <ul>
           <li><a class="menu-item page-scroll" href="#home">Home</a></li>
@@ -651,10 +659,7 @@
           </div>
         </div>
       </div>
-      <a id="to-top" class="page-scroll" href="#home">
-        <!--<i class="fa fa-chevron-up fa-fw fa-1x"></i>-->
-        <i class="fa fa-angle-up fa-fw fa-3x" aria-hidden="true"></i>
-      </a>
+      <a id="to-top" class="page-scroll" href="#home"></a>
     </footer>
     <div id="site-notice" class="container-fluid">
       <div class="row">
@@ -666,9 +671,13 @@
               >hello.silviapititto@gmail.com</a
             >
           </p>
-          <a id="close-btn"
-            ><img width="25" src="img/icons/close_btn.png" alt="close"
-          /></a>
+          <a id="close-btn" class="x-btn white-close-btn">
+            <!-- <img
+              width="25"
+              src="img/svg/close_btn_white.svg"
+              alt="close button"
+          /> -->
+          </a>
         </div>
       </div>
       <div class="row">
@@ -730,10 +739,9 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
-              class="img-fluid"
-            /> </a
+              class="img-fluid" /></a
           ><!--/ Close button -->
           <!-- Project Info -->
           <h1 class="project-title">Sylvy</h1>
@@ -908,7 +916,7 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
@@ -1082,7 +1090,7 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
@@ -1206,7 +1214,7 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
@@ -1320,7 +1328,7 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
@@ -1446,7 +1454,7 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
@@ -1648,7 +1656,7 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
@@ -1833,7 +1841,7 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
@@ -2012,6 +2020,7 @@
             <a
               class="link"
               href="http://sp--photography.tumblr.com/tagged/music"
+              target="_blank"
               >here</a
             >.
           </p>
@@ -2039,7 +2048,7 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
@@ -2144,6 +2153,7 @@
             <a
               class="link"
               href="http://sp--photography.tumblr.com/tagged/landscape"
+              target="_blank"
               >here</a
             >.
           </p>
@@ -2171,7 +2181,7 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
@@ -2324,7 +2334,12 @@
           <p class="para-grey">Other Projects</p>
           <p class="para-grey">
             More photography
-            <a class="link" href="http://sp--photography.tumblr.com/">here</a>.
+            <a
+              class="link"
+              href="http://sp--photography.tumblr.com/"
+              target="_blank"
+              >here</a
+            >.
           </p>
           <p class="para-grey">
             All images by Silvia Pititto. All rights are reserved.
@@ -2345,8 +2360,6 @@
     <script src="vendor/fastclick/fastclick.js"></script>
     <script src="vendor/easing/easing.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-
-    <script src="vendor/select2/select2.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

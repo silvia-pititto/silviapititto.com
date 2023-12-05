@@ -1,5 +1,6 @@
 {
-    "name": "",
+    "name": "silviapititto.com",
+    "short_name": "silviapititto.com",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -12,7 +13,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#302f2f",
+    "background_color": "#302f2f",
+    "start_url": "http://silviapititto.com",
     "display": "standalone"
 }
