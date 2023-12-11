@@ -1,4 +1,4 @@
-/*
+/*s
  * silviapititto.com
  * Copyright 2023 Silvia Pititto
  *
@@ -96,7 +96,7 @@
 
       var projectId,
         projectName = "";
-      const isClosing = false;
+      var isClosing = false;
       const target = $(e.currentTarget);
       const targetClass = target.attr("class");
 
@@ -133,11 +133,11 @@
       mobile: true,
     };
 
-    const logoReveal = {
-      delay: 210,
-      easing: "ease-in", //"cubic-bezier(0.075, 0.82, 0.165, 1)",
-      mobile: true,
-    };
+    // const logoReveal = {
+    //   delay: 210,
+    //   easing: "cubic-bezier(0.075, 0.82, 0.165, 1)", //"ease-in",
+    //   mobile: true,
+    // };
 
     const sr = ScrollReveal();
     // sr.reveal(".reveal-home, .reveal-logo", logoReveal, 50);
