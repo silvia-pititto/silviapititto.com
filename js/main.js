@@ -93,7 +93,6 @@
     $(".portfolio-box-caption, .close-project-btn").on("click", function (e) {
       e.preventDefault();
       e.stopPropagation();
-
       var projectId,
         projectName = "";
       var isClosing = false;
@@ -106,9 +105,8 @@
         projectId = "#" + projectName + "-project";
       } else {
         // close project
-        projectName = $.trim(target.siblings(".project-title").text());
-        projectName = projectName.replace(/\s+/g, "-").toLowerCase();
-        projectId = "#" + projectName + "-project";
+        projectName = target.parents(".project-container").attr("id");
+        projectId = "#" + projectName;
         isClosing = true;
       }
       toggleScreen(e, projectId, isClosing);
