@@ -534,6 +534,7 @@ input {
 }
 .overlay-hugeinc nav {
   -moz-perspective: 300px;
+  perspective: 300px;
 }
 
 .overlay-hugeinc nav ul {
