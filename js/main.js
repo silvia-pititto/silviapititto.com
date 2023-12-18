@@ -6,18 +6,33 @@
 (function ($) {
   "use strict";
 
+  var isDesktop = false;
+
+  if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    isDesktop = false;
+    console.log("MOBILE");
+  } else {
+    isDesktop = true;
+    $("html").addClass("scroll-snap");
+    $("section, header, footer").addClass("scroll-snap-section");
+    console.log("DESKTOP");
+  }
+
   // Fast click
   FastClick.attach(document.body);
 
   // MARK: - Functions
-  function showPage() {
-    document.body.classList.remove("loading");
-  }
   // DOCUMENT READY
   $(document).ready(function () {
     $("a.page-scroll").click(function (event) {
       // Remove scroll snap
-      $("html").css("scroll-snap-type", "none");
+      if (isDesktop) {
+        $(".scroll-snap").css("scroll-snap-type", "none");
+      }
       event.preventDefault();
       const $anchor = $(this).attr("href");
       // animate
@@ -29,7 +44,9 @@
         "easeInOutExpo",
         function () {
           // Resume scroll snap
-          $("html").css("scroll-snap-type", "y mandatory");
+          if (isDesktop) {
+            $(".scroll-snap").css("scroll-snap-type", "y mandatory");
+          }
         }
       );
     });
