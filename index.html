@@ -8,14 +8,17 @@
     <meta name="author" content="Silvia Pititto" />
     <meta
       name="keywords"
-      content="iOS Development, Web Development, UX Design, UI Design, Graphic Design, Music, Photography, Singer-Songwriter"
+      content="iOS Development, Web Development, UX Design, UI Design, Graphic Design, Musician, Photography, Singer-Songwriter"
     />
 
     <title>Silvia Pititto</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link href="css/main.css" rel="stylesheet" />
 
     <!-- Custom Fonts -->
@@ -172,13 +175,6 @@
       </ul>
       <div class="container-fluid equal-height">
         <div class="row h-100">
-          <!-- TODO: UPDATE THIS SPINNER TO WORK WITH NEW WAYS -->
-          <!-- <div class="spinner-container">
-          <svg width="16px" height="12px">
-            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-            <polyline id="front" class="animated" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-          </svg>
-        </div> -->
           <div
             class="col-12 text-vertical-center header-container px-xs-15 px-sm-15 px-md-15"
           >
@@ -191,15 +187,15 @@
           </div>
           <div class="col-12 bottom-align-text">
             <ul class="list-inline text-center skill-list">
-              <li class="list-inline-item reveal-home">Singer-Songwriter</li>
-              <li class="list-inline-item reveal-home"><b>/</b></li>
               <li class="list-inline-item reveal-home">
                 Mobile &amp; Web Development
               </li>
               <li class="list-inline-item reveal-home"><b>/</b></li>
-              <li class="list-inline-item reveal-home">UX Design</li>
+              <li class="list-inline-item reveal-home">UX / UI Design</li>
               <li class="list-inline-item reveal-home"><b>/</b></li>
               <li class="list-inline-item reveal-home">Photography</li>
+              <li class="list-inline-item reveal-home"><b>/</b></li>
+              <li class="list-inline-item reveal-home">Singer-Songwriter</li>
             </ul>
           </div>
         </div>
@@ -207,7 +203,7 @@
     </header>
     <!-- About -->
     <section id="about">
-      <div class="container-fluid no-padding h-100 p-0" dir="ltr">
+      <div class="container-fluid no-padding h-100 p-0 m-auto" dir="ltr">
         <div class="row h-100">
           <div class="col-lg-6 col-md-12 col-sm-12 background-grey text-center">
             <img
@@ -215,87 +211,99 @@
               class="img-fluid section-title-img reveal-about"
               alt="About"
             />
-            <div class="text-center background-white">
-              <img
-                class="profile-img float-right"
-                src="img/about/SilviaPititto.png"
-                alt=""
-              />
-            </div>
           </div>
           <div
-            class="col-lg-6 col-sm-12 col-md-12 text-overflow text-justify about-content py-10"
+            class="col-lg-6 col-sm-12 col-md-12 text-overflow text-justify about-content my-auto"
           >
-            <h2 id="about-content-header" class="py-4 text-left">
-              Hello, I'm Silvia,
-            </h2>
-            <h3 class="text-left statement">
-              an Italian <br />
-              hybrid designer / developer . <br />
-              photographer . <br />
-              singer-songwriter . <br />Sylvy is my stage name .
-            </h3>
-            <p>
-              After graduating in <em>Information Technology</em> at the
-              University of Bologna, I moved to Ireland to study at the Dublin
-              Institute of Technology where I achieved a First-class Honours
-              <em>MsC in Creative Digital Media</em> specialising in Mobile &
-              Web Applications.<br /><br />
-              Currently living in Northern Ireland, I work as a
-              <em>Customer & User Experience Executive</em> at
-              <a
-                class="link"
-                target="_blank"
-                href="https://www.vmltechnology.com/"
-                >VML Technology</a
-              >
-              , where I collaborate with all teams to ensure that UX is well
-              integrated across all phases of product development.
-              <br />
-              My job involves developing new product ideas, establishing
-              requirements, leading user research and conducting research to
-              guide product decisions from inception to delivery.
-              <br />
-              I'm also responsible for managing the knowledge base, external
-              data integrations for the core product and providing technical
-              support to clients.
-              <br /><br />
-              I’m passionate about creating and improving digital products
-              through research and testing to suit the user’s needs and the
-              objectives of the business. I have an eye for detail and I’m
-              always eager to embrace new challenges with an open mind and a
-              positive attitude.<br /><br />
-              I mentored at the successful first edition of
-              <a class="link" target="_blank" href="http://learnto.charged.city"
-                >LearnTo iOS</a
-              >, an eight-week iOS development course for students and
-              professionals.<br />
-              I've also volunteered at
-              <a
-                class="link"
-                target="_blank"
-                href="https://djangogirls.org/belfast/"
-                >Django Girls Belfast</a
-              >
-              to support and inspire other women in technology. <br /><br />
-              I’ve been practising photography for 10 years working on different
-              genres. My favourite ones are music, landscape and abstract
-              photography. I constantly experiment in my creative process with
-              both digital and analog mediums.<br /><br />
-              I released
-              <a
-                class="link"
-                target="_blank"
-                href="https://distrokid.com/hyperfollow/sylvy1/the-starry-eyed-ep "
-                ><em>“The Starry-Eyed”</em></a
-              >, a small collection of songs written by me, under my stage name
-              Sylvy. My music is available to listen on all online platforms.
-              <br />
-              Little trivia about me: I sung with famous Irish musician Glen
-              Hansard on stage a few times. <br /><br />
-              When I’m not behind a screen or playing music, you can find me
-              outdoors skateboarding or trekking.
-            </p>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 my-auto">
+                <img
+                  class="profile-img img-fluid float-right"
+                  src="img/about/SilviaPititto.png"
+                  alt="Silvia Pititto playing a ukulele"
+                />
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <h2 id="about-content-header" class="py-4 text-left">
+                  Hello, I'm Silvia
+                </h2>
+                <h3 class="text-left statement">
+                  an Italian <br />
+                  hybrid designer / developer . <br />
+                  photographer . <br />
+                  singer-songwriter . <br />Sylvy is my stage name .
+                </h3>
+              </div>
+            </div>
+            <div class="row text-justify">
+              <div class="col">
+                <p>
+                  After graduating in <em>Information Technology</em> at the
+                  University of Bologna, I moved to Ireland to study at the
+                  Dublin Institute of Technology where I achieved a First-class
+                  Honours <em>MsC in Creative Digital Media</em> specialising in
+                  Mobile & Web Applications.<br /><br />
+                  Currently living in Northern Ireland, I work as a
+                  <em>Customer & User Experience Executive</em> at
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://www.vmltechnology.com/"
+                    >VML Technology</a
+                  >
+                  , where I collaborate with all teams to ensure that UX is well
+                  integrated across all phases of product development.
+                  <br />
+                  My job involves developing new product ideas, establishing
+                  requirements, leading user research and conducting research to
+                  guide product decisions from inception to delivery.
+                  <br />
+                  I'm also responsible for managing the knowledge base, external
+                  data integrations for the core product and providing technical
+                  support to clients.
+                  <br /><br />
+                  I’m passionate about creating and improving digital products
+                  through research and testing to suit the user’s needs and the
+                  objectives of the business. I have an eye for detail and I’m
+                  always eager to embrace new challenges with an open mind and a
+                  positive attitude.<br /><br />
+                  I mentored at the successful first edition of
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="http://learnto.charged.city"
+                    >LearnTo iOS</a
+                  >, an eight-week iOS development course for students and
+                  professionals.<br />
+                  I've also volunteered at
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://djangogirls.org/belfast/"
+                    >Django Girls Belfast</a
+                  >
+                  to support and inspire other women in technology. <br /><br />
+                  I’ve been practising photography for 10 years working on
+                  different genres. My favourite ones are music, landscape and
+                  abstract photography. I constantly experiment in my creative
+                  process with both digital and analog mediums.<br /><br />
+                  I released
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://distrokid.com/hyperfollow/sylvy1/the-starry-eyed-ep "
+                    ><em>“The Starry-Eyed”</em></a
+                  >, a small collection of songs written by me, under my stage
+                  name Sylvy. My music is available to listen on all online
+                  platforms.
+                  <br />
+                  Little trivia about me: I sung with famous Irish musician Glen
+                  Hansard on stage a few times. <br /><br />
+                  When I’m not behind a screen or playing music, you can find me
+                  outdoors skateboarding or trekking.
+                </p>
+              </div>
+            </div>
           </div>
           <!-- /.row -->
         </div>
@@ -319,7 +327,7 @@
         </div>
         <!-- /.row -->
         <div class="row no-gutters">
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a class="portfolio-box">
               <img
                 class="img-fluid"
@@ -336,7 +344,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -353,7 +361,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -370,7 +378,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a class="portfolio-box">
               <img
                 src="img/portfolio/thumbnails/portfolio-1.png"
@@ -387,7 +395,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -404,7 +412,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -421,7 +429,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -438,7 +446,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -453,7 +461,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -468,7 +476,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -802,6 +810,15 @@
               >
             </li>
           </ul>
+          <p class="project-description para-grey">
+            Find out more about this project on Behance:
+            <a
+              class="link"
+              href="https://www.behance.net/gallery/186799095/Sylvy"
+              target="_blank"
+              >Sylvy Behance Project</a
+            >
+          </p>
         </div>
       </div>
       <div class="row">
@@ -972,7 +989,13 @@
           </p>
           <p class="project-description para-grey">
             Below are some designs created for this project, find out more about
-            this project on my Behance project: Silvia & Stephen .
+            this project on my Behance project:
+            <a
+              class="link"
+              href="https://www.behance.net/gallery/186802137/Silvia-Stephen-Wedding-Design"
+              target="_blank"
+              >Silvia & Stephen</a
+            >
           </p>
         </div>
       </div>
@@ -1184,9 +1207,9 @@
           </p>
           <p class="project-description para-grey">
             Additionally, I lead weekly <em>Design Reviews</em> with the design
-            and tech teams in order to feedback on the technical feasibility of
-            designs and ensure that the teams’ objectives are aligned with the
-            user’s and company’s goals.
+            and tech teams in order to exchange feedback on the technical
+            feasibility of designs and ensure that the teams’ objectives are
+            aligned with the user’s and company’s goals.
           </p>
           <p class="project-description para-grey">
             Working closely with customers to help them make the most of the
@@ -1224,10 +1247,9 @@
           </p>
           <p class="project-description para-light">
             When designs are handed over to the development team, I make sure
-            all that all the design decisions and requirements are followed
-            through. As product updates are released, I test them out to ensure
-            the UX is as expected and raise any bugs I may come across during
-            testing.
+            that all the design decisions and requirements are followed through.
+            As product updates are released, I test them out to ensure the UX is
+            as expected and raise any bugs I may come across during testing.
           </p>
         </div>
       </div>
@@ -1412,8 +1434,8 @@
           <h1 class="project-title">Picseed</h1>
           <h5 class="project-type">iOS App / UX / User Research</h5>
           <p class="project-description para-grey">
-            <em>Picseed</em> is an iOS App which allows to capture, collect and
-            share inspiration.<br />
+            <em>Picseed</em> is an iOS App which allows you to capture, collect
+            and share inspiration.<br />
             Content is tailored to the user’s interests to give a personalised
             experience, inspire and motivate them.<br />
             Following the agile methodology, user experience has been at the
@@ -1429,7 +1451,7 @@
           <h2 class="para-heading heading-grey">TEAM WORK &amp; CONCEPT</h2>
           <p class="project-description para-grey">
             <em>Picseed</em> was born from a mutual passion for art and
-            collaboration with Lisa Reburn, talented colleague and friend.
+            collaboration with Lisa Reburn, a talented colleague and friend.
           </p>
           <p class="project-description para-grey">
             The application was created as the final project of our MSc in
@@ -1525,7 +1547,7 @@
           <h2 class="para-heading heading-light">PICSEED WEBSITE</h2>
           <p class="project-description para-light">
             Before launching <em>Picseed</em>’s beta testing, we decided to
-            create a web page for the app to promote the app and give
+            create a web page for the app to promote it and give
             <em>Picseed</em> an online presence.
           </p>
           <p class="project-description para-light">
@@ -1714,8 +1736,8 @@
             incorporate his favourite landscape photograph of mine, one that
             features crashing waves into the Irish Sea. <br />
             Following his brief, I created a couple of design variations playing
-            with the concept of double exposure which I felt was best suited his
-            vision for the album.
+            with the concept of double exposure which I felt was best suited for
+            his vision for the album.
           </p>
           <p class="project-description para-light">
             For the
@@ -1838,152 +1860,154 @@
           </p>
         </div>
         <!-- Swiper -->
-        <div class="swiper-container s1">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_1_by_Silvia_Pititto.jpg"
-                alt=""
-              />
+        <div class="col-12">
+          <div class="swiper-container s1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_1_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_2_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_3_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_4_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_5_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_6_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_7_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_8_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_9_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_10_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_11_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_12_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_13_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_14_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_15_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_16_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_17_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_18_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_19_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_20_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_2_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_3_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_4_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_5_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_6_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_7_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_8_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_9_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_10_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_11_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_12_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_13_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_14_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_15_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_16_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_17_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_18_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_19_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_20_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
       </div>
       <div class="row logo-container">
@@ -2034,89 +2058,92 @@
             A selection of landscape photographs I have taken through the years.
           </p>
           <p class="project-description para-light">
-            I have always been fascinated by the beauty of nature and landscapes
-            are a wonderful expression of what Mother Nature can offer to us.
+            I have always been fascinated by the beauty of nature, and
+            landscapes are a wonderful expression of what Mother Nature can
+            offer to us.
             <br />So intricate and simple at times, they are compounds of atomic
             elements that together create many patterns, textures and colours.
           </p>
           <p class="project-description para-light">
             Season by season, every corner of the Earth is unique in its own way
-            and we all shall respect it.<br />
+            and we all should respect it.<br />
             I strive to portray landscapes in their raw form, highlighting their
             peculiarities.
           </p>
         </div>
         <!-- Swiper -->
-        <div class="swiper-container s2">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/landscape_1_by_Silvia_Pititto.jpg"
-                alt=""
-              />
+        <div class="col-12">
+          <div class="swiper-container s2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/landscape_1_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/lanscape_2_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/lanscape_3_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/lanscape_4_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/landscape_5_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/landscape_6_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/landscape_7_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/landscape_8_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/landscape_10_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/lanscape_2_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/lanscape_3_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/lanscape_4_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/landscape_5_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/landscape_6_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/landscape_7_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/landscape_8_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/landscape_10_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-          </div>
 
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </div>
       <div class="row logo-container">
@@ -2182,124 +2209,126 @@
           </p>
         </div>
         <!-- Swiper -->
-        <div class="swiper-container s3">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_1_by_Silvia_Pititto.jpg"
-                alt=""
-              />
+        <div class="col-12">
+          <div class="swiper-container s3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_1_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_2_1_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_13_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_14_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_15_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_17_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_10_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_11_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_2_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_3_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_4_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_5_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_7_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_8_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_9_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_12_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_2_1_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_13_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_14_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_15_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_17_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_10_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_11_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_2_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_3_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_4_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_5_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_7_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_8_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_9_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_12_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
       </div>
       <div class="row logo-container">
@@ -2329,7 +2358,7 @@
 
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="vendor/swiper/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="vendor/fastclick/fastclick.js"></script>
     <script src="vendor/easing/easing.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>

@@ -7,25 +7,25 @@
   "use strict";
 
   var isDesktop = false;
-
   if (
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
-    )
+    ) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)) &&
+    !window.MSStream
   ) {
     isDesktop = false;
-    console.log("MOBILE");
   } else {
     isDesktop = true;
     $("html").addClass("scroll-snap");
     $("section, header, footer").addClass("scroll-snap-section");
-    console.log("DESKTOP");
   }
 
   // Fast click
   FastClick.attach(document.body);
 
   // MARK: - Functions
+
   // DOCUMENT READY
   $(document).ready(function () {
     $("a.page-scroll").click(function (event) {
@@ -53,7 +53,7 @@
 
     //#to-top button appears after scrolling
     var fixed = false;
-    // show go to top on scroll only on desktop or tabletss
+    // show go to top on scroll only on desktop or tablets
     if ($(window).width() > 736) {
       $(document).scroll(function () {
         if ($(this).scrollTop() > 250) {
@@ -147,20 +147,11 @@
       scale: 1.1,
       mobile: true,
     };
-
-    // const logoReveal = {
-    //   delay: 210,
-    //   easing: "cubic-bezier(0.075, 0.82, 0.165, 1)", //"ease-in",
-    //   mobile: true,
-    // };
-
     const sr = ScrollReveal();
-    // sr.reveal(".reveal-home, .reveal-logo", logoReveal, 50);
     sr.reveal(".reveal-footer, .reveal-about , .reveal-work", fooReveal);
 
     /* Swiper */
-    const spaceBetweenSlides = 20;
-    const slidesPerView = 2;
+    const slidesPerView = 3;
     const minSpaceBetweenSlides = 10;
     const minSlidesPerView = 1;
     const breakpoints = {
@@ -168,31 +159,24 @@
       320: {
         slidesPerView: minSlidesPerView,
         spaceBetween: minSpaceBetweenSlides,
-        autoHeight: true,
         width: 260,
-        centeredSlides: true,
       },
       // when window width is <= 480px
       480: {
         slidesPerView: minSlidesPerView,
         spaceBetween: minSpaceBetweenSlides,
-        autoHeight: true,
         width: 360,
-        centeredSlides: true,
       },
       // when window width is <= 640px
       640: {
         slidesPerView: minSlidesPerView,
         spaceBetween: minSpaceBetweenSlides,
-        autoHeight: true,
         width: 550,
-        centeredSlides: true,
       },
-      // when window width is <= 896px
+      // when window width is >= 896px
       896: {
         slidesPerView: minSlidesPerView,
         spaceBetween: minSpaceBetweenSlides,
-        autoHeight: true,
         width: 800,
         centeredSlides: true,
       },
@@ -200,11 +184,11 @@
 
     const swiperOptions = {
       slidesPerView: slidesPerView,
-      spaceBetween: spaceBetweenSlides,
       centeredSlides: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        dynamicBullets: false,
       },
       navigation: {
         nextEl: ".swiper-button-next",
@@ -213,6 +197,14 @@
       observer: true,
       observeParents: true,
       breakpoints: breakpoints,
+      a11y: {
+        prevSlideMessage: "Previous slide",
+        nextSlideMessage: "Next slide",
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+      },
     };
 
     const s1 = new Swiper(".s1", swiperOptions);
@@ -230,7 +222,7 @@
       });
     });
 
-    /* Validatiom */
+    /* Contact Form Validation */
     const name = $('.validate-input input[name="name"]');
     const email = $('.validate-input input[name="email"]');
     const message = $('.validate-input textarea[name="message"]');
