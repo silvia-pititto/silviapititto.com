@@ -624,9 +624,6 @@ input {
 .project-info-container:first-child {
   padding-top: 5rem;
 }
-/*.project-container{
-    padding-bottom:3rem !important;
-}*/
 .background-light {
   background: #f8f8f8;
 }
@@ -634,7 +631,6 @@ input {
   background: #ea4549;
 }
 .para-heading {
-  /*font-family: Montserrat-Bold;*/
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -649,7 +645,7 @@ input {
   color: #fefdfd;
 }
 .para-light {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .project-description {
   font-family: "Open Sans", sans-serif;
@@ -706,6 +702,9 @@ input {
 .swiper-container {
   width: 100%;
   margin: 2em 0 2em 0;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .swiper {
   width: 100%;
