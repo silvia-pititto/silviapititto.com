@@ -1,15 +1,37 @@
 /*
  * silviapititto.com
- * Copyright 2020 Silvia Pititto
+ * Copyright 2023 Silvia Pititto
  *
  */
 /* Global Styles */
 * {
   -webkit-overflow-scrolling: touch;
 }
+html {
+  overflow-y: scroll;
+}
 body {
   font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
+}
+.scroll-snap {
+  scroll-snap-type: y mandatory;
+}
+.scroll-snap-section {
+  scroll-snap-align: start;
+}
+header,
+section {
+  height: 100vh;
+  width: 100vw;
+}
+#portfolio.scroll-snap-section {
+  scroll-snap-type: y proximity;
+}
+#contact.scroll-snap-section {
+  scroll-snap-align: start;
+}
+footer.scroll-snap-section {
+  scroll-snap-align: end;
 }
 h1,
 h2 {
@@ -33,6 +55,13 @@ a {
 }
 .h-100 {
   height: 100%;
+}
+.mx-5 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.mt-4 {
+  margin-top: 4%;
 }
 /* Custom Button Styles */
 .btn-dark {
@@ -128,7 +157,6 @@ a {
     opacity: 0;
   }
 }
-
 .header-container {
   margin-bottom: auto;
   margin-top: auto;
@@ -139,7 +167,6 @@ a {
 }
 .skill-list {
   color: white;
-  margin-bottom: 0px;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   opacity: 1;
@@ -159,13 +186,17 @@ a {
   width: 100%;
   height: 100%;
 }
+.about-content {
+  padding-left: 6%;
+  padding-right: 4%;
+}
 .statement {
   font-size: medium;
   font-family: "Montserrat", "Open Sans", "Helvetica", "Arial";
-  font-size: 14pt;
+  font-size: 18pt;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 0 15% 5% 15%;
+  padding: 0 0% 5% 0%;
 }
 .background-grey {
   background: #302f2f;
@@ -194,46 +225,38 @@ a {
   right: 0;
   top: 0;
 }
+div:has(.section-title-img) {
+  min-height: 157px;
+}
 #about-content-header {
   /* Hello, my name is... */
-  font-size: 18pt;
+  font-size: 28pt;
   color: #ea4549;
   line-height: 26px;
   padding-top: 5rem !important;
   font-weight: 700;
-}
-.profile-img {
-  position: absolute;
-  right: -10%;
-  top: 10%;
 }
 /* Work */
 .header-margin {
   margin-bottom: 1.5rem;
 }
 #portfolio {
-  padding: 3rem 0 0 0;
+  padding: 5rem 0 0 0;
   background-color: #f7f7f7;
   height: 100vh !important;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .img-portfolio {
   margin: 0 auto;
 }
 .portfolio-item:hover,
 .portfolio-item:focus {
-  /* Rectangle Copy: */
   background-color: #ea4549;
 }
 .img-portfolio:hover,
 .img-portfolio:focus {
   opacity: 0;
-}
-.portfolio-box {
-  position: relative;
-  display: block;
-  max-width: 650px;
-  min-width: 200px;
-  margin: 0 auto;
 }
 .portfolio-box .portfolio-box-caption {
   color: white;
@@ -300,10 +323,13 @@ a {
   }
 }
 .spotify-embed {
+  width: auto;
   max-height: 400px;
   min-height: 200px;
-  max-width: 400px;
-  min-width: 200px;
+}
+.swiper-slide {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 /* Footer */
 footer {
@@ -346,20 +372,39 @@ footer {
 #to-top {
   display: none;
   position: fixed;
-  bottom: 5px;
-  right: 5px;
+  bottom: 1rem;
+  right: 1.5rem;
+  background-image: url("../img/svg/arrow_up.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 22.49px;
+  width: 40px;
 }
-@media (min-width: 768px) {
+.bottom-align-text {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+}
+/* iPads */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .row {
     position: relative;
   }
 
   .bottom-align-text {
-    position: absolute;
-    bottom: 5%;
-    right: 0;
+    bottom: 15%;
   }
 }
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+  .row {
+    position: relative;
+  }
+
+  .bottom-align-text {
+    bottom: 15%;
+  }
+}
+
 /* Site Notice */
 #site-notice {
   background: #302f2f;
@@ -399,22 +444,16 @@ footer {
   top: 0;
   left: 100%;
 }
-/* To top arrow */
-.not-selected .fa-angle-up,
-#to-top {
-  /*color: #302F2F !important;*/
-  color: #ea4549 !important;
-}
-.selected .fa-angle-up,
-#to-top:hover {
-  color: #ea4549 !important;
-}
 /* Overlay Menu */
 input {
   display: none;
 }
-.lower label:hover {
+.lower label:hover,
+.overlay label:hover,
+.close-project-btn:hover,
+#close-btn:hover {
   cursor: pointer;
+  opacity: 70%;
 }
 .lower {
   color: #ea4549;
@@ -422,6 +461,9 @@ input {
   z-index: 1000;
   top: 1rem;
   right: 1rem;
+}
+.lower label {
+  margin-right: 1.5rem;
 }
 .overlay {
   position: fixed;
@@ -443,11 +485,11 @@ input {
 .overlay nav {
   text-align: center;
   position: relative;
-  top: 50%;
+  top: 20%;
   /* height: 60%; */
   font-size: 50px;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  /* -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); */
 }
 
 .overlay ul {
@@ -498,29 +540,47 @@ input {
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
-
+.menu-btn {
+  background-image: url("../img/svg/menu.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+  height: 30px;
+  width: 37px;
+}
+.x-btn {
+  background-image: url("../img/svg/close_btn_red.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  margin-right: 1.5rem;
+}
 .overlay-hugeinc nav {
   -moz-perspective: 300px;
+  perspective: 300px;
 }
 
 .overlay-hugeinc nav ul {
-  opacity: 0.4;
-  -webkit-transform: translateY(-25%) rotateX(35deg);
-  transform: translateY(-25%) rotateX(35deg);
-  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0.5;
+  /* -webkit-transform: translateY(-25%) rotateX(35deg);
+  transform: translateY(-25%) rotateX(35deg); */
+  -webkit-transition: -webkit-transform 0.6s, opacity 0.5s;
+  transition: transform 0.6s, opacity 0.5s;
 }
 
 #menu:checked ~ .overlay-hugeinc nav ul {
   opacity: 1;
-  -webkit-transform: rotateX(0deg);
-  transform: rotateX(0deg);
+  /* -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg); */
 }
 
-#menu:not(:checked) ~ .overlay-hugeinc nav ul {
+/* #menu:not(:checked) ~ .overlay-hugeinc nav ul {
   -webkit-transform: translateY(25%) rotateX(-35deg);
   transform: translateY(25%) rotateX(-35deg);
-}
+} */
+
 /* Projects */
 .project-container {
   display: none;
@@ -564,9 +624,6 @@ input {
 .project-info-container:first-child {
   padding-top: 5rem;
 }
-/*.project-container{
-    padding-bottom:3rem !important;
-}*/
 .background-light {
   background: #f8f8f8;
 }
@@ -574,7 +631,6 @@ input {
   background: #ea4549;
 }
 .para-heading {
-  /*font-family: Montserrat-Bold;*/
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -589,7 +645,7 @@ input {
   color: #fefdfd;
 }
 .para-light {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .project-description {
   font-family: "Open Sans", sans-serif;
@@ -645,57 +701,37 @@ input {
 /* Swiper Slides setup */
 .swiper-container {
   width: 100%;
-  height: 100%;
   margin: 2em 0 2em 0;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* width: auto; */
-  /* width: 80%; */
-  /* width: 200px; */
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 .swiper-slide img {
-  width: auto;
-  /* height: auto; */
-  max-width: 100%;
-  max-height: 100%;
+  display: block;
 }
 .swiper-pagination-bullet-active {
   background-color: #ea4549;
 }
-.swiper-container-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: 0;
-}
-.swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
-  background-image: url("../img/icons/forward-arrow-default.png");
-}
-.swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-  background-image: url("../img/icons/back-arrow-default.png");
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #ea4549;
 }
 .pt-110 {
   padding-top: 110pt;
 }
 .footer-img {
-  /* max-width: 10%; */
   max-width: 100px;
 }
 /*---------------------------------------------*/
@@ -1117,6 +1153,9 @@ textarea.input2 + .focus-input2::after {
 .social-list {
   text-align: center;
 }
+.social-list li {
+  padding-top: 2%;
+}
 .contact-content {
   margin-top: auto;
   margin-bottom: auto;
@@ -1178,7 +1217,6 @@ textarea.input2 + .focus-input2::after {
   .text-overflow {
     max-height: 100%;
     overflow: auto;
-    /* padding: 1rem !important; */
     padding-top: 8% !important;
   }
   #about-content-header {
@@ -1219,8 +1257,6 @@ textarea.input2 + .focus-input2::after {
 }
 
 /* Phones */
-
-/* @media only screen and (max-width : 480px) { */
 @media only screen and (max-width: 480px) and (max-width: 767px) {
   html,
   body {
@@ -1229,8 +1265,11 @@ textarea.input2 + .focus-input2::after {
     -webkit-overflow-scrolling: touch;
   }
   /* HOME */
-  #logo {
-    padding-top: 20% !important;
+  .header-container {
+    margin-top: 40%;
+  }
+  .bottom-align-text {
+    position: relative;
   }
   .list-inline-item:not(:last-child) {
     margin-right: 0;
@@ -1268,15 +1307,12 @@ textarea.input2 + .focus-input2::after {
   .text-overflow {
     max-height: 100%;
     overflow: auto;
-    padding: 1rem !important;
     padding-top: 8% !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
   }
   #about-content-header {
-    padding-top: 2rem !important;
-  }
-  .text-overflow p {
-    padding-right: 1rem !important;
-    padding-left: 1rem !important;
+    padding-top: 5% !important;
   }
   #portfolio {
     height: 100% !important;
@@ -1319,18 +1355,13 @@ textarea.input2 + .focus-input2::after {
     display: none;
   }
   .footer-img {
-    max-width: 25%;
+    max-width: 28%;
   }
 }
 
 @media (min-width: 1920px) {
-  .profile-img {
-    right: -5% !important;
-  }
   #about-content-header {
-    font-size: 28pt;
-    padding-top: 8rem !important;
-    padding-bottom: 2rem !important;
+    font-size: 30pt;
   }
   .m-bottom {
     margin-bottom: 2.5rem;
@@ -1347,99 +1378,27 @@ textarea.input2 + .focus-input2::after {
   }
 }
 
-/**
-Loading spinner
-*/
-/* .spinner-container {
-  position: absolute;
-  padding-top: 10%;
-  left: 45%;
-  /* transform: translate(-50%, -50%); */
-/* }
-.dot {
-  width: 28px;
-  height: 28px;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  float: left;
-  margin: 0 10px;
-  transform: scale(0);
-  animation: fx 1000ms ease infinite 0ms;
-}
-.dot:nth-child(2) {
-  animation: fx 1000ms ease infinite 300ms;
-}
-.dot:nth-child(3) {
-  animation: fx 1000ms ease infinite 600ms;
-}
-@keyframes fx {
-  50% {
-    transform: scale(1);
-    opacity: 1;
+/* Tablet Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) {
+  html,
+  body {
+    overflow-x: hidden !important;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
-  100% {
-    opacity: 0;
+  .header-container {
+    margin-top: 40%;
   }
-} */
-/**
-Heart beat
-*/
-/* .spinner-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(5);
-}
-.spinner-container svg polyline {
-  fill: none;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.spinner-container svg polyline#back {
-  stroke: rgba(255,75,80,0.3);
-}
-#front {
-  stroke: #ff4b50;
-  stroke-dasharray: 12, 36;
-  stroke-dashoffset: 48;
-  animation: dash 1s linear infinite;
-} */
-/* Make animations wait */
-/* .loading *,
-.loading *:before,
-.loading *:after {
-  animation-play-state: paused !important;
-}
-@-moz-keyframes dash {
-  62.5% {
-    opacity: 0;
+  /* ABOUT */
+  .section-title-img {
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
-  to {
-    stroke-dashoffset: 0;
+  .profile-img {
+    right: 10%;
+    top: 130%;
   }
 }
-@-webkit-keyframes dash {
-  62.5% {
-    opacity: 0;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@-o-keyframes dash {
-  62.5% {
-    opacity: 0;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes dash {
-  62.5% {
-    opacity: 0;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-} */

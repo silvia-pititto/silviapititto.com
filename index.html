@@ -3,27 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Silvia Pititto Portfolio Website" />
     <meta name="author" content="Silvia Pititto" />
     <meta
       name="keywords"
-      content="iOS Development, Web Development, UX Design, Music, Photography, Design"
+      content="iOS Development, Web Development, UX Design, UI Design, Graphic Design, Musician, Photography, Singer-Songwriter"
     />
 
     <title>Silvia Pititto</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link href="css/main.min.css" rel="stylesheet" />
 
     <!-- Custom Fonts -->
-    <link
-      href="vendor/font-awesome/css/font-awesome.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Rosario|Open+Sans"
       rel="stylesheet"
@@ -38,51 +36,67 @@
     <link
       rel="icon"
       type="image/png"
-      href="favicons/favicon-32x32.png"
       sizes="32x32"
+      href="favicons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
-      href="favicons/favicon-16x16.png"
-      sizes="16x16"
+      sizes="194x194"
+      href="/favicon-194x194.png"
     />
-    <link rel="manifest" href="favicons/manifest.json" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="favicons/safari-pinned-tab.svg"
-      color="#5bbad5"
+      color="#ea4548"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="vendor/select2/select2.min.css"
-    />
+    <meta name="apple-mobile-web-app-title" content="silviapititto.com" />
+    <meta name="application-name" content="silviapititto.com" />
+    <meta name="msapplication-TileColor" content="#ea4548" />
+    <meta name="theme-color" content="#302f2f" />
   </head>
   <body>
     <!-- Navigation -->
     <input type="checkbox" id="menu" />
     <div class="lower">
-      <label for="menu"><i class="fa fa-bars fa-fw fa-2x"></i></label>
+      <label for="menu">
+        <i class="menu-btn"></i>
+      </label>
     </div>
-    <!--<a id="menu-toggle" href="#" class="btn toggle"><i class="fa fa-bars fa-fw fa-2x"></i></a>-->
     <div class="overlay overlay-hugeinc">
-      <label for="menu"><i class="fa fa-times fa-fw fa-3x"></i></label>
+      <label for="menu">
+        <i class="close-menu-btn x-btn"></i>
+      </label>
       <nav>
         <ul>
-          <li><a class="menu-item page-scroll" href="#home">Home</a></li>
-          <li><a class="menu-item page-scroll" href="#about">About</a></li>
-          <li><a class="menu-item page-scroll" href="#portfolio">Work</a></li>
           <li>
-            <a
-              class="menu-item page-scroll"
-              href="https://store.silviapititto.com"
-              target="_blank"
-              >Store</a
-            >
+            <a class="menu-item page-scroll" href="#home">Home</a>
           </li>
-          <li><a class="menu-item page-scroll" href="#contact">Contact</a></li>
+          <li>
+            <a class="menu-item page-scroll" href="#about">About</a>
+          </li>
+          <li>
+            <a class="menu-item page-scroll" href="#portfolio">Work</a>
+          </li>
+          <li>
+            <a href="https://store.silviapititto.com" target="_blank">Store</a>
+          </li>
+          <li>
+            <a class="menu-item page-scroll" href="#contact">Contact</a>
+          </li>
           <li style="display: inline-block">
             <a href="https://www.behance.net/silvia-pititto" target="_blank">
               <img
@@ -123,8 +137,8 @@
             <a href="https://twitter.com/sylvy_rocks?lang=en" target="_blank">
               <img
                 class="img-responsive social-logo"
-                src="img/svg/twitter.svg"
-                alt="Twitter"
+                src="img/svg/twitterx.svg"
+                alt="Twitter X"
               />
             </a>
           </li>
@@ -152,7 +166,7 @@
       </nav>
     </div>
     <!-- Header -->
-    <header id="home" class="header">
+    <header id="home" class="header" dir="ltr">
       <ul id="slideshow">
         <li></li>
         <li></li>
@@ -161,34 +175,27 @@
       </ul>
       <div class="container-fluid equal-height">
         <div class="row h-100">
-          <!-- TODO: UPDATE THIS SPINNER TO WORK WITH NEW WAYS -->
-          <!-- <div class="spinner-container">
-          <svg width="16px" height="12px">
-            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-            <polyline id="front" class="animated" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-          </svg>
-        </div> -->
           <div
             class="col-12 text-vertical-center header-container px-xs-15 px-sm-15 px-md-15"
           >
             <img
               id="logo"
-              src="img/home/homepage_logo.png"
+              src="img/home/Silvia_Pititto_Wordmark_Logo.png"
               class="img-fluid reveal-logo"
               alt="logo"
             />
           </div>
           <div class="col-12 bottom-align-text">
             <ul class="list-inline text-center skill-list">
-              <li class="list-inline-item reveal-home">Singer-Songwriter</li>
-              <li class="list-inline-item reveal-home"><b>/</b></li>
               <li class="list-inline-item reveal-home">
                 Mobile &amp; Web Development
               </li>
               <li class="list-inline-item reveal-home"><b>/</b></li>
-              <li class="list-inline-item reveal-home">UX Design</li>
+              <li class="list-inline-item reveal-home">UX / UI Design</li>
               <li class="list-inline-item reveal-home"><b>/</b></li>
               <li class="list-inline-item reveal-home">Photography</li>
+              <li class="list-inline-item reveal-home"><b>/</b></li>
+              <li class="list-inline-item reveal-home">Singer-Songwriter</li>
             </ul>
           </div>
         </div>
@@ -196,84 +203,108 @@
     </header>
     <!-- About -->
     <section id="about">
-      <div class="container-fluid no-padding h-100 p-0">
+      <div class="container-fluid no-padding h-100 p-0 m-auto" dir="ltr">
         <div class="row h-100">
-          <div class="col-sm-6 background-grey text-center">
+          <div class="col-lg-6 col-md-12 col-sm-12 background-grey text-center">
             <img
               src="img/about/About_label.png"
               class="img-fluid section-title-img reveal-about"
               alt="About"
             />
-            <div class="text-center background-white">
-              <img
-                class="profile-img float-right"
-                src="img/about/SilviaPititto.png"
-                alt=""
-              />
-            </div>
           </div>
-          <div class="col-sm-6 text-overflow px-5 text-justify about-content">
-            <h2 id="about-content-header" class="px-5 py-4 text-center">
-              Hello, I'm Silvia.
-            </h2>
-            <h3 class="text-center statement">
-              I’m an Italian hybrid designer / developer, <br />
-              photographer & singer-songwriter.<br />Sylvy is my stage name.
-            </h3>
-            <p class="px-5">
-              After graduating in <em>Information Technology</em> at the
-              University of Bologna, I moved to Ireland to study at the Dublin
-              Institute of Technology where I achieved a First-class Honours
-              <em>MsC in Creative Digital Media</em> specialising in Mobile &
-              Web Applications.<br /><br />
-              Currently based in Northern Ireland, I work as a
-              <em>Customer & User Experience Lead</em> at
-              <a
-                class="link"
-                target="_blank"
-                href="https://www.vmltechnology.com/"
-                >VML Technology</a
-              >
-              , where I come up with new UX design product ideas, lead user
-              research and carry out design research, collaborating with all
-              teams ensuring that UX is well-integrated into the product
-              development flow. <br /><br />
-              I’m passionate about creating and improving digital products
-              through research and testing to suit the user’s needs and the
-              objectives of the business. I have an eye for detail and I’m
-              always eager to embrace new challenges with an open mind and a
-              positive attitude.<br /><br />
-              I mentored at the successful first edition of
-              <a class="link" target="_blank" href="http://learnto.charged.city"
-                >LearnTo iOS</a
-              >, an eight-week iOS development course for students and
-              professionals.<br />
-              I've also volunteered at
-              <a
-                class="link"
-                target="_blank"
-                href="https://djangogirls.org/belfast/"
-                >Django Girls Belfast</a
-              >
-              to support and inspire other women in technology. <br /><br />
-              I’ve been practising photography for 10 years working on different
-              genres. My favourite ones are music, landscape and abstract
-              photography. I constantly experiment in my creative process with
-              both digital and analog mediums.<br /><br />
-              I released
-              <a
-                class="link"
-                target="_blank"
-                href="https://distrokid.com/hyperfollow/sylvy1/the-starry-eyed-ep "
-                ><em>“The Starry-Eyed”</em></a
-              >, a small collection of songs written by me, under my stage name
-              Sylvy. My music is available to listen on all online platforms.
-              <br />
-              Little trivia about me: I sung with famous Irish musician Glen
-              Hansard on stage a few times. <br /><br />
-              When I’m not behind a screen or playing music, you can find me
-              outdoors skateboarding or trekking.
-            </p>
+          <div
+            class="col-lg-6 col-sm-12 col-md-12 text-overflow text-justify about-content my-auto"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 my-auto">
+                <img
+                  class="profile-img img-fluid float-right"
+                  src="img/about/SilviaPititto.png"
+                  alt="Silvia Pititto playing a ukulele"
+                />
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <h2 id="about-content-header" class="py-4 text-left">
+                  Hello, I'm Silvia
+                </h2>
+                <h3 class="text-left statement">
+                  an Italian <br />
+                  hybrid designer / developer . <br />
+                  photographer . <br />
+                  singer-songwriter . <br />Sylvy is my stage name .
+                </h3>
+              </div>
+            </div>
+            <div class="row text-justify">
+              <div class="col">
+                <p>
+                  After graduating in <em>Information Technology</em> at the
+                  University of Bologna, I moved to Ireland to study at the
+                  Dublin Institute of Technology where I achieved a First-class
+                  Honours <em>MsC in Creative Digital Media</em> specialising in
+                  Mobile & Web Applications.<br /><br />
+                  Currently living in Northern Ireland, I work as a
+                  <em>Customer & User Experience Executive</em> at
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://www.vmltechnology.com/"
+                    >VML Technology</a
+                  >
+                  , where I collaborate with all teams to ensure that UX is well
+                  integrated across all phases of product development.
+                  <br />
+                  My job involves developing new product ideas, establishing
+                  requirements, leading user research and conducting product
+                  research to guide product decisions from inception to
+                  delivery.
+                  <br />
+                  I'm also responsible for managing the knowledge base, external
+                  data integrations for the core product and providing technical
+                  support to clients.
+                  <br /><br />
+                  I’m passionate about creating and improving digital products
+                  through research and testing to suit the user’s needs and the
+                  objectives of the business. I have an eye for detail and I’m
+                  always eager to embrace new challenges with an open mind and a
+                  positive attitude.<br /><br />
+                  I mentored at the successful first edition of
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="http://learnto.charged.city"
+                    >LearnTo iOS</a
+                  >, an eight-week iOS development course for students and
+                  professionals.<br />
+                  I've also volunteered at
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://djangogirls.org/belfast/"
+                    >Django Girls Belfast</a
+                  >
+                  to support and inspire other women in technology. <br /><br />
+                  I’ve been practising photography for 10+ years working on
+                  different genres. My favourite ones are music, landscape and
+                  abstract photography. I constantly experiment in my creative
+                  process with both digital and analog mediums.<br /><br />
+                  I released
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://distrokid.com/hyperfollow/sylvy1/the-starry-eyed-ep "
+                    ><em>“The Starry-Eyed”</em></a
+                  >, a small collection of songs written by me, under my stage
+                  name Sylvy. My music is available to listen on all online
+                  platforms.
+                  <br />
+                  Little trivia about me: I sung with famous Irish musician Glen
+                  Hansard on stage a few times. <br /><br />
+                  When I’m not behind a screen or playing music, you can find me
+                  outdoors skateboarding or trekking.
+                </p>
+              </div>
+            </div>
           </div>
           <!-- /.row -->
         </div>
@@ -282,7 +313,7 @@
     <!-- /.container -->
     <!-- Portfolio -->
     <section id="portfolio">
-      <div class="container-fluid portfolio-content">
+      <div class="container-fluid portfolio-content p-0" dir="ltr">
         <div class="row header-margin justify-content-md-center">
           <div class="col text-center">
             <h2>
@@ -297,7 +328,24 @@
         </div>
         <!-- /.row -->
         <div class="row no-gutters">
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            <a class="portfolio-box">
+              <img
+                class="img-fluid"
+                src="img/portfolio/thumbnails/portfolio-2.png"
+                alt="Silvia & Stephen"
+              />
+              <div id="silvia-e-stephen" class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-name">Silvia & Stephen</div>
+                  <div class="project-category text-faded">
+                    Brand Identity / Graphic Design / Website
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -314,7 +362,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -325,13 +373,13 @@
                 <div class="portfolio-box-caption-content">
                   <div class="project-name">VML Technology</div>
                   <div class="project-category text-faded">
-                    Product / UX Design
+                    Product / UX / CX
                   </div>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a class="portfolio-box">
               <img
                 src="img/portfolio/thumbnails/portfolio-1.png"
@@ -342,30 +390,13 @@
                 <div class="portfolio-box-caption-content">
                   <div class="project-name">Picseed</div>
                   <div class="project-category text-faded">
-                    iOS App / UX Design & Research
+                    iOS App / UX / User Research
                   </div>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <a class="portfolio-box">
-              <img
-                class="img-fluid"
-                src="img/portfolio/thumbnails/portfolio-2.png"
-                alt="Remix"
-              />
-              <div id="remix" class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-name">Remix</div>
-                  <div class="project-category text-faded">
-                    Identity / Branding / Website
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -382,7 +413,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -399,7 +430,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -416,7 +447,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -431,7 +462,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -446,7 +477,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
             <a href="#" class="portfolio-box">
               <img
                 class="img-fluid"
@@ -470,9 +501,9 @@
     </section>
     <!-- Contact -->
     <section id="contact">
-      <div class="container-fluid h-100 p-0">
+      <div class="container-fluid h-100 p-0" dir="ltr">
         <div class="row h-100">
-          <div class="col-sm-6 background-grey text-center">
+          <div class="col-lg-6 col-md-12 col-sm-12 background-grey text-center">
             <img
               src="img/contact/Contact_label.png"
               class="img-fluid section-title-img reveal-footer"
@@ -480,7 +511,7 @@
             />
           </div>
           <div
-            class="col-sm-6 text-overflow px-5 py-5 contact-content text-justify"
+            class="col-lg-6 col-md-12 col-sm-12 text-overflow px-5 py-5 contact-content text-justify"
           >
             <h2 class="text-center contact-cta">Let's get in touch!</h2>
             <!-- Contact Form -->
@@ -591,8 +622,8 @@
                     >
                       <img
                         class="img-responsive social-logo"
-                        src="img/svg/twitter.svg"
-                        alt="Twitter"
+                        src="img/svg/twitterx.svg"
+                        alt="Twitter X"
                       />
                     </a>
                   </li>
@@ -651,10 +682,7 @@
           </div>
         </div>
       </div>
-      <a id="to-top" class="page-scroll" href="#home">
-        <!--<i class="fa fa-chevron-up fa-fw fa-1x"></i>-->
-        <i class="fa fa-angle-up fa-fw fa-3x" aria-hidden="true"></i>
-      </a>
+      <a id="to-top" class="page-scroll" href="#home"></a>
     </footer>
     <div id="site-notice" class="container-fluid">
       <div class="row">
@@ -666,9 +694,7 @@
               >hello.silviapititto@gmail.com</a
             >
           </p>
-          <a id="close-btn"
-            ><img width="25" src="img/icons/close_btn.png" alt="close"
-          /></a>
+          <a id="close-btn" class="x-btn white-close-btn"></a>
         </div>
       </div>
       <div class="row">
@@ -730,22 +756,18 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
-              class="img-fluid"
-            /> </a
+              class="img-fluid" /></a
           ><!--/ Close button -->
           <!-- Project Info -->
           <h1 class="project-title">Sylvy</h1>
           <h5 class="project-type">Singer-Songwriter / Photography / Media</h5>
           <p class="project-description para-grey">
-            After playing in bands since my teens, I decided to start my solo
-            music project called Sylvy. <br />
-            I released a debut EP called “The Starry-Eyed” in 2020.
-          </p>
-          <p class="project-description para-grey">
-            Lately I’ve been learning new instruments and I hope to perform live
-            soon when the world allows it again.
+            Sylvy is my solo music project. <br />
+            As an independent musician, I decided to create my own brand
+            identity and artwork for my debut EP called “The Starry-Eyed” which
+            was released in 2020.
           </p>
           <p class="project-description para-grey">
             You can follow my music journey on social media:
@@ -789,37 +811,54 @@
               >
             </li>
           </ul>
+          <p class="project-description para-grey">
+            Find out more about this project on Behance:
+            <a
+              class="link"
+              href="https://www.behance.net/gallery/186799095/Sylvy"
+              target="_blank"
+              >Sylvy Behance Project</a
+            >
+          </p>
         </div>
       </div>
       <div class="row">
         <div class="col-12 project-info-container text-center background-grey">
           <h2 class="para-heading heading-light">THE STARRY-EYED</h2>
           <p class="project-description para-light">
-            "The Starry-Eyed" is an honest soul-touching ode to love with all
-            its ups and downs. <br />
+            <em>"The Starry-Eyed"</em> is an honest soul-touching ode to love
+            with all its ups and downs. <br />
             The EP was recorded in Italy with a couple of friends and produced
-            by Nikolas Pumilia for Himself Records.
+            by
+            <a
+              class="link"
+              href="https://it.linkedin.com/in/nikolaspumilia"
+              target="_blank"
+              >Nikolas Pumilia</a
+            >
+            for Himself Records.<br /><br />
+            I developed a concept for the artwork to match the mood of the album
+            and then I let my imagination run wild.<br />
           </p>
         </div>
       </div>
       <div class="row no-gutters text-center background-light">
-        <div class="col">
+        <div class="col-md-6 text-right">
           <img
             src="img/portfolio/work/sylvy/sylvy_the_starry_eyed.png"
             alt="The Starry-Eyed Artwork"
             class="img-fluid mx-auto"
           />
         </div>
-        <div class="col text-center m-auto">
-          <div class="embed-responsive embed-responsive-1by1">
-            <iframe
-              class="embed-responsive-item spotify-embed"
-              src="https://open.spotify.com/embed/album/23fww457ibykOo4AgMoSDl"
-              height="400"
-              allowtransparency="true"
-              allow="encrypted-media"
-            ></iframe>
-          </div>
+        <div class="col-sm-2 embed-responsive-1by1 text-left mx-5 my-auto">
+          <iframe
+            class="embed-responsive-item spotify-embed"
+            src="https://open.spotify.com/embed/album/23fww457ibykOo4AgMoSDl"
+            height="500px"
+            width="100%"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
         </div>
       </div>
       <div class="row">
@@ -828,31 +867,44 @@
         >
           <h2 class="para-heading heading-light">PROMO PHOTOGRAPHY</h2>
           <p class="project-description para-light">
-            I developed a concept for the artwork to match the mood of the album
-            and then I let my DIY skills do the rest.<br />
-            I also planned and took some promo self-portraits in a way to match
-            the colour palette and vibes of the album.
+            I took some self-portraits for promotional purposes that blended in
+            with the album's color palette and vibes.<br />
+            Additionally, I designed printed promotional material to make it
+            easy for others to find my music and connect with me online.
           </p>
         </div>
       </div>
-      <div class="row no gutters background-grey">
-        <div class="col text-center">
+      <div class="row no-gutters background-grey">
+        <!-- <div class="col-lg-12 text-center"> -->
+        <div class="col-sm-3 m-auto">
           <img
             src="img/portfolio/work/sylvy/sylvy_1.jpg"
             class="img-fluid"
             alt="sylvy_1"
           />
+        </div>
+        <div class="col-sm-3 m-auto">
           <img
             src="img/portfolio/work/sylvy/sylvy_2.jpg"
             class="img-fluid"
             alt="sylvy_2"
           />
+        </div>
+        <div class="col-sm-3 m-auto">
           <img
             src="img/portfolio/work/sylvy/sylvy_3.jpg"
             class="img-fluid"
             alt="sylvy_3"
           />
         </div>
+        <div class="col-sm-3 m-auto">
+          <img
+            src="img/portfolio/work/sylvy/sylvy_cards.jpg"
+            class="img-fluid"
+            alt="sylvy promo cards"
+          />
+        </div>
+        <!-- </div> -->
       </div>
       <div class="row logo-container">
         <div class="col text-center">
@@ -896,9 +948,9 @@
         </div>
       </div>
     </div>
-    <!-- Remix -->
+    <!-- Silvia & Stephen -->
     <div
-      id="remix-project"
+      id="silvia-e-stephen-project"
       class="container-fluid project-container no-padding"
     >
       <div class="row no-gutters project-row">
@@ -908,158 +960,86 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
           ><!--/ Close button -->
           <!-- Project Info -->
-          <h1 class="project-title">Remix</h1>
-          <h5 class="project-type">Identity / Branding / Website</h5>
+          <h1 class="project-title">Silvia & Stephen</h1>
+          <h5 class="project-type">
+            Brand Identity / Graphic Design / Website
+          </h5>
           <p class="project-description para-grey">
-            Brand identity and website for a fictitious newborn independent
-            record label named Remix.
+            My husband and I wanted to incorporate our personalities into all
+            the details of our wedding day, which led to this personal project.
           </p>
-          <h2 class="para-heading heading-grey">BRAND IDENTITY</h2>
           <p class="project-description para-grey">
-            The design process involved initial brainstorming, market research
-            and the creation of an inspirational mood board. I did a brain dump
-            on paper for the identity and developed the most appealing ideas on
-            Illustrator until Remix logo came to life.
+            I was responsible for designing everything including our logo,
+            stationery, calligraphy, wax seals, a multi-lingual wedding website
+            and more.<br />
+            My husband got involved in the design process through feedback and
+            sketches for the table signs.
+          </p>
+          <p class="project-description para-grey">
+            <em
+              >Elegant simplicity with a pop of colour and “vintage boho”
+              vibes</em
+            >
+            was the inspiration throughout the design process.
+          </p>
+          <p class="project-description para-grey">
+            Below are some designs created for this project, find out more about
+            this project on my Behance project:
+            <a
+              class="link"
+              href="https://www.behance.net/gallery/186802137/Silvia-Stephen-Wedding-Design"
+              target="_blank"
+              >Silvia & Stephen</a
+            >
           </p>
         </div>
       </div>
       <div class="row no-gutters">
-        <div class="col-sm-6 col-lg-4 text-center m-bottom">
+        <div class="col-md-4">
           <img
-            src="img/portfolio/work/remix/remix-1.jpg"
-            class="img-fluid mx-auto"
-            alt=""
-          />
-        </div>
-        <div class="col-sm-6 m-bottom text-center">
-          <img
-            src="img/portfolio/work/remix/remix-2.jpg"
-            class="img-fluid mx-auto"
-            alt=""
-          />
-        </div>
-        <div class="col-sm-6 text-center">
-          <img
-            src="img/portfolio/work/remix/remix-3.png"
-            class="img-fluid mx-auto"
-            alt=""
-          />
-        </div>
-        <div class="col-sm-6 text-center">
-          <img
-            src="img/portfolio/work/remix/remix-4.png"
-            class="img-fluid mx-auto"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div
-          class="col-lg-12 project-info-container text-center background-red"
-        >
-          <h2 class="para-heading heading-light">WEB DESIGN</h2>
-          <p class="project-description para-light">
-            For Remix website, I sketched ideas, planned its content and a site
-            map. From the identity, colour palette and typography were created
-            and they were used in the wireframes.
-          </p>
-          <p class="project-description para-light">
-            I designed an additional ‘Store’ page along with merchandise
-            including clothing and guitar picks.
-          </p>
-          <p class="project-description para-light">
-            Since the record label was at its initial stage of finding talents,
-            a ‘Connect’ page was created with this in mind as it allows artists
-            to send their demos directly to Remix.
-          </p>
-          <p class="project-description para-light">
-            A mobile version of the website was also designed and the logo was
-            adapted as an iOS app logo.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-xs-12 col-lg-6 text-center m-bottom">
-          <img
-            src="img/portfolio/work/remix/remix-5.png"
-            class="img-fluid mx-auto"
-            alt=""
-          />
-        </div>
-        <div class="col-sm-12 col-xs-12 col-lg-6 m-bottom text-center">
-          <img
-            src="img/portfolio/work/remix/remix-6.png"
-            class="img-fluid mx-auto"
-            alt=""
-          />
-        </div>
-        <div class="col-sm-12 col-xs-12 text-center">
-          <img
-            src="img/portfolio/work/remix/webDesign_assets.png"
-            class="img-fluid mx-auto"
-            alt=""
-          />
-        </div>
-        <div class="col-sm-12 col-xs-12 text-center">
-          <img
-            src="img/portfolio/work/remix/mobile_social_assets.png"
-            class="img-fluid mx-auto"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div
-          class="col-lg-12 project-info-container text-center background-grey"
-        >
-          <h2 class="para-heading heading-light">WEB DEVELOPMENT</h2>
-          <p class="project-description para-light">
-            Remix website was coded using HTML5, CSS3, Bootstrap, jQuery,
-            Javascript and PHP (server-side).
-          </p>
-        </div>
-      </div>
-      <div class="row px-5 py-5">
-        <div class="col-lg-12 text-center full-width-col">
-          <img
+            src="img/portfolio/work/silvia-e-stephen/silvia-e-stephen_stationery.jpg"
             class="img-fluid"
-            src="img/portfolio/work/remix/web_dev_assets.png"
-            alt=""
+            alt="Silvia & Stephen Stationery"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="img/portfolio/work/silvia-e-stephen/silvia-e-stephen_tableSigns.jpg"
+            class="img-fluid"
+            alt="Silvia & Stephen Table Signs"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="img/portfolio/work/silvia-e-stephen/silvia-e-stephen_details.jpg"
+            class="img-fluid"
+            alt="Silvia & Stephen Table Signs"
+          />
+        </div>
+      </div>
+      <div class="row no-gutters project-row">
+        <div class="col-lg-12 text-center">
+          <img
+            src="img/portfolio/work/silvia-e-stephen/silvia-e-stephen_website.jpg"
+            class="img-fluid"
+            alt="Silvia & Stephen Wedding Website"
           />
         </div>
       </div>
       <div class="row logo-container">
         <div class="col text-center">
-          <p class="para-grey">Project: Remix</p>
+          <p class="para-grey">Project: Silvia & Stephen</p>
           <p class="para-grey">
-            Resources:
-            <a
-              class="link"
-              target="_blank"
-              href="http://www.graphicsfuel.com/2013/11/responsive-showcase-psd-mockups/"
-              >responsive mockups</a
-            >,
-            <a class="link" target="_blank" href="http://www.pixelresort.com/"
-              >iOS icons template</a
-            >,
-            <a
-              class="link"
-              target="_blank"
-              href="http://www.pixeden.com/psd-mock-up-templates/psd-tshirt-mockup-template-vol3"
-              >t-shirts mockups</a
-            >,
-            <a
-              class="link"
-              target="_blank"
-              href="http://graphicburger.com/pin-button-badge-mock-up/"
-              >pin badge mockups</a
-            >
+            Photographs by:
+            <a class="link" target="_blank" href="https://enricovallicella.com"
+              >Enrico Vallicella</a
+            >, Silvia Pititto
           </p>
           <a
             ><img
@@ -1082,19 +1062,25 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
           ><!--/ Close button -->
           <!-- Project Info -->
           <h1 class="project-title">Water Squirrel</h1>
-          <h5 class="project-type">Game App</h5>
+          <h5 class="project-type">Game App / UX Design</h5>
           <p class="project-description para-grey">
-            Water Squirrel is an immersive single-player game where the player
-            takes control over the actions of the character. The aim is to help
-            the water squirrel find a giant acorn by avoiding obstacles along
-            the way.
+            <em>Water Squirrel</em> is an immersive single-player indie game.
+            The goal is to help the Water Squirrel find a giant acorn by
+            avoiding obstacles along the way.<br /><br />
+            Find out more about this project on Behance:
+            <a
+              class="link"
+              href="https://www.behance.net/gallery/184422749/Water-Squirrel-An-Indie-Game"
+              target="_blank"
+              >Water Squirrel Behance Project</a
+            >
           </p>
           <h2 class="para-heading heading-grey">IDEATION</h2>
           <p class="project-description para-grey">
@@ -1118,40 +1104,29 @@
       </div>
       <div class="row background-red px-3">
         <div class="col-lg-12 project-info-container text-center">
-          <h2 class="para-heading heading-light">USER-CENTERED DESIGN</h2>
+          <h2 class="para-heading heading-light">DESIGN</h2>
           <p class="project-description para-light">
             A user-centered approach was taken with the creation of a persona,
-            scenarios and use cases.
+            scenarios and use cases. <br /><br />
+            All vector game graphics and icons were designed by me from scratch
+            for the game using Adobe Illustrator and Sketch.
           </p>
-          <p class="project-description para-light">
-            The App Design process involved the following steps:
-          </p>
-          <ol class="project-description para-light">
-            <li>
-              Creation of a Flow Diagram that defined the application’s flow as
-              described in the scenarios.
-            </li>
-            <li>Design of basic UI elements for the game’s interface.</li>
-          </ol>
         </div>
       </div>
       <div class="row py-5 px-3">
         <div class="col col-lg-12 text-center full-width-col">
           <img
             class="img-fluid"
-            src="img/portfolio/work/water-squirrel/design_assets.png"
+            src="img/portfolio/work/water-squirrel/water-squirrel-design.jpg"
             alt="design_assets"
           />
         </div>
       </div>
       <div class="row background-grey px-3">
         <div class="col-lg-12 project-info-container text-center">
-          <h2 class="para-heading heading-light">
-            UI DESIGN & GAME DEVELOPMENT
-          </h2>
+          <h2 class="para-heading heading-light">GAME DEVELOPMENT</h2>
           <p class="project-description para-light">
-            I designed all the graphics from scratch for the game which I then
-            developed in Lua using
+            <em>Water Squirrel</em> app was developed in Lua using
             <a class="link" href="https://coronalabs.com/" target="_blank"
               >Corona SDK</a
             >, which provides a cross-platform mobile development platform
@@ -1206,56 +1181,58 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
           ><!--/ Close button -->
           <!-- Project Info -->
           <h1 class="project-title">VML Technology</h1>
-          <h5 class="project-type">Product / UX Design</h5>
-          <!-- <h2 class="para-heading heading-grey">TEAM WORK</h2> -->
+          <h5 class="project-type">Product / UX / CX</h5>
           <p class="project-description para-grey">
-            After working as a full-stack product engineer at
+            After working as a Full-Stack Product Engineer at
             <a
               class="link"
               target="_blank"
               href="https://www.vmltechnology.com/"
               >VML Technology</a
             >
-            for 5 years, I have transitioned to a Customer & User Experience
-            Lead role. I come up with new UX design product ideas, lead user
-            research and carry out design research, collaborating with all teams
-            ensuring that UX is well-integrated into the product development
-            flow.
+            for 5 years, I transitioned to a
+            <em>Customer & User Experience Executive</em> role. <br />I
+            collaborate with all teams to ensure that UX is well integrated
+            across all phases of product development. <br />My role involves
+            developing new product concepts, competitive analysis, conducting
+            user research and product research while collaborating with all
+            teams to ensure that UX is well-integrated into the product
+            development cycle.
           </p>
           <p class="project-description para-grey">
-            Other duties in my job include carrying out competitive analysis and
-            design to stay up to date with the current trends and understand how
-            to adapt to the market. I lead regular <i>Design Reviews</i> with
-            the Design team in order to feedback on the technical feasibility of
-            designs and ensure that our teams’ objectives are aligned with the
-            user’s and company’s goals.
+            Additionally, I lead weekly <em>Design Reviews</em> with the design
+            and tech teams in order to exchange feedback on the technical
+            feasibility of designs and ensure that the teams’ objectives are
+            aligned with the user’s and company’s goals.
           </p>
           <p class="project-description para-grey">
-            Working with customers to help them make the most of the patented
-            video technology allows me to also understand our target audience
-            better, refine our user personas and identify more use cases for the
-            technology.
+            Working closely with customers to help them make the most of the
+            patented video technology also allows me to also understand our
+            target audience better, refine our user personas and identify more
+            use cases for the technology.<br />
+            Integrating external data into the core product and providing
+            technical support to clients is my responsibility.
           </p>
           <p class="project-description para-grey">
-            I’m currently working on the upcoming advanced video editor as well
-            as putting together supporting documentation and onboarding material
-            for the customers.
+            I’m currently working on the upcoming advanced video editor and I’ve
+            been putting together knowledge base content and onboarding material
+            for customers.
           </p>
         </div>
         <div
           class="col-lg-12 project-info-container text-center background-red"
         >
-          <h2 class="para-heading heading-light">PRODUCT DESIGN PROCESS</h2>
+          <h2 class="para-heading heading-light">PRODUCT DEVELOPMENT CYCLE</h2>
           <p class="project-description para-light">
             When a new feature is requested, as the initial part of the design
-            process, I liase with the CTO and Head of Design on requirements.
+            process, I liaise with the CTO and Head of Design on requirements.
             Then, I create the information architecture mapping and visual
             low-fi mock-ups to validate and discuss the ideas to the design
             team. Next step is to plan out the tasks in detail for the design
@@ -1271,10 +1248,9 @@
           </p>
           <p class="project-description para-light">
             When designs are handed over to the development team, I make sure
-            all that all the design decisions and requirements are followed
-            through. As product updates are released, I test them out to ensure
-            the UX is as expected and raise any bugs I may come across during
-            testing.
+            that all the design decisions and requirements are followed through.
+            As product updates are released, I test them out to ensure the UX is
+            as expected and raise any bugs I may come across during testing.
           </p>
         </div>
       </div>
@@ -1320,7 +1296,7 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
@@ -1329,22 +1305,22 @@
           <h1 class="project-title">Visualise It</h1>
           <h5 class="project-type">Web Application / Data Visualisation</h5>
           <p class="project-description para-grey">
-            Experimental web app that attempts to visualise data in a simple
-            meaningful way and caters for anyone.
+            <em>Visualise It</em> is an experimental user-friendly web data
+            visualisation tool which automatically analyses a dataset and
+            generates meaningful data visualisations for it.
           </p>
           <h2 class="para-heading heading-grey">BACKGROUND RESEARCH</h2>
           <p class="project-description para-grey">
-            I developed this web app as my final project for my Bachelor’s
-            Degree in Information Science for Management. <br />
-            The goal was to create a tool for automatic generation of Open Data
-            visualisations.
+            I developed this application as my final research project for my
+            Bachelor’s Degree.
           </p>
           <p class="project-description para-grey">
             At the time of research, existing systems were mainly desktop
             applications which focused only on relational data sets and required
-            prior knowledge or training.
-            <em>Visualise It</em> was born from the need for a universal and
-            easily accessible data visualisation tool.
+            prior knowledge or training.<br />
+            <em>Visualise It</em> was born from the need for an easily
+            accessible data visualisation tool that anyone could use to analyse
+            datasets.
           </p>
         </div>
       </div>
@@ -1363,23 +1339,25 @@
         >
           <h2 class="para-heading heading-light">DEVELOPMENT</h2>
           <p class="project-description para-light">
-            I developed <em>Visualise It</em> with web technologies such as
+            I developed <em>Visualise It</em> using web technologies such as
             HTML5, CSS3, SVG, D3.js, Google Maps API and Bootstrap.<br />
-            The semantic data sets analysis is done by
-            <em>The Semantic Detector</em> an API created by Computer Science
-            graduate Gabriele Cigna.
+            With <em>Visualise It</em>, users can upload data in one of three
+            formats (XML, csv or JSON). Then, data is analysed, filtered and
+            presented visually to the user.
           </p>
           <p class="project-description para-light">
-            With Visualise It, users can upload data in one of three formats
-            (XML, csv or JSON).<br />
-            Then, data is analysed, filtered and presented visually. The
-            application automatically generates different visualisations best
-            suitable for the submitted data.
+            The application automatically generates different visualisations
+            best suitable for the submitted data. <br />The data analysis is
+            done through an API called <em>“The Semantic Detector”</em>,
+            developed by fellow Computer Science graduate Gabriele Cigna.
           </p>
           <p class="project-description para-light">
-            Interactions with data, such as choosing a graph’s variables and
-            animations are a crucial aspect of the application giving a tool to
-            the users to seamlessly speculate and analyse their data.
+            Based on the API results, <em>Visualise It</em> then filters the
+            data and presents it visually. The various visualisations generated
+            are only the ones best suitable for the submitted data. <br />
+            User interactions with data, such as choosing a graph’s variables
+            and animations are a crucial aspect of the application giving a tool
+            to the users to seamlessly speculate and analyse their data.
           </p>
           <p class="project-description para-light">
             Given the broad scope and experimental nature of this project,
@@ -1446,25 +1424,37 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
           ><!--/ Close button -->
           <!-- Project Info -->
           <h1 class="project-title">Picseed</h1>
-          <h5 class="project-type">iOS App / UX Design & Research</h5>
+          <h5 class="project-type">iOS App / UX / User Research</h5>
           <p class="project-description para-grey">
-            <em>Picseed</em> is an iOS App which allows to capture, collect and
-            share inspiration.<br />
+            <em>Picseed</em> is an iOS App which allows you to capture, collect
+            and share inspiration.<br />
             Content is tailored to the user’s interests to give a personalised
-            experience, inspire and motivate them.
+            experience, inspire and motivate them.<br />
+            Following the agile methodology, user experience has been at the
+            forefront of this project, driving each UX refinement iteration.<br /><br />
+            Find out more about this project on Behance:
+            <a
+              class="link"
+              href="https://www.behance.net/gallery/185038039/Picseed-App-for-Creatives"
+              target="_blank"
+              >Picseed Behance Project</a
+            >
           </p>
           <h2 class="para-heading heading-grey">TEAM WORK &amp; CONCEPT</h2>
           <p class="project-description para-grey">
-            The app was created for my Masters project. <em>Picseed</em> was
-            born from a mutual passion for art and collaboration with Lisa
-            Reburn, talented colleague and friend.
+            <em>Picseed</em> was born from a mutual passion for art and
+            collaboration with Lisa Reburn, a talented colleague and friend.
+          </p>
+          <p class="project-description para-grey">
+            The application was created as the final project of our MSc in
+            Creative Digital Media in 2016 and was awarded top marks.
           </p>
           <p class="project-description para-grey">
             Our plan was to create an app to aid creatives in their inspiration
@@ -1478,28 +1468,28 @@
         </div>
       </div>
       <div class="row no-gutters">
-        <div class="col-sm-6 col-lg-4 text-center m-bottom">
+        <div class="col-xl-3 col-sm-12 col-md-6 col-lg-3 text-center">
           <img
             src="img/portfolio/work/picseed/picseed_1.jpg"
             class="img-fluid mx-auto"
             alt="picseed_1"
           />
         </div>
-        <div class="col-sm-6 text-center m-bottom">
+        <div class="col-xl-3 col-sm-12 col-md-6 col-lg-3 text-center">
           <img
             src="img/portfolio/work/picseed/picseed_2.jpg"
             class="img-fluid mx-auto"
             alt="picseed_2"
           />
         </div>
-        <div class="col-sm-6 text-center">
+        <div class="col-xl-3 col-sm-12 col-md-6 col-lg-3 text-center">
           <img
             src="img/portfolio/work/picseed/picseed_3.png"
             class="img-fluid mx-auto"
             alt="picseed_3"
           />
         </div>
-        <div class="col-sm-6 text-center">
+        <div class="col-xl-3 col-sm-12 col-md-6 col-lg-3 text-center">
           <img
             src="img/portfolio/work/picseed/picseed_4.jpg"
             class="img-fluid mx-auto"
@@ -1515,8 +1505,8 @@
           <p class="project-description para-light">
             User testing was crucial to <em>Picseed</em>’s development and
             refinement.<br />
-            We carried out frequent user testing sessions including remote
-            testing, card sorting and focus groups.
+            We carried out frequent user testing sessions both in-person and
+            remotely as well as card sorting, A/B tests and focus groups.
           </p>
           <p class="project-description para-light">
             The feedback gathered allowed us to refine the app and track issues
@@ -1556,7 +1546,7 @@
           <h2 class="para-heading heading-light">PICSEED WEBSITE</h2>
           <p class="project-description para-light">
             Before launching <em>Picseed</em>’s beta testing, we decided to
-            create a web page for the app to promote the app and give
+            create a web page for the app to promote it and give
             <em>Picseed</em> an online presence.
           </p>
           <p class="project-description para-light">
@@ -1648,7 +1638,7 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
@@ -1657,54 +1647,58 @@
           <h1 class="project-title">Nik and Himself</h1>
           <h5 class="project-type">Photography / Graphic Design / Video</h5>
           <p class="project-description para-grey">
-            Collaboration on promotional material for Nik and Himself second
-            album comprising photography, graphic design and video work.
+            Collaboration on promotional material for Nik and Himself's second
+            album comprising of photography, graphic design and video work.
           </p>
           <h2 class="para-heading heading-grey">PROMO PHOTOGRAPHY</h2>
           <p class="project-description para-grey">
-            Nik came to me for two promo photoshoots for his second album.
-            First, we discussed ideas among which taking photos to use for the
-            album cover art.
+            Nik came to me for promo photoshoots for his album. After discussing
+            a few ideas together, we did the photoshoots and used one of the
+            photos as part of the album cover.
           </p>
         </div>
       </div>
       <div class="row no-gutters">
-        <div class="col-sm-6 col-lg-4 text-center m-bottom">
+        <div class="col-lg-3 text-center">
           <img
             src="img/portfolio/work/nik-and-himself/nik_1.jpg"
             class="img-fluid mx-auto"
             alt="nik_1"
           />
         </div>
-        <div class="col-sm-6 text-center">
+        <div class="col-lg-3 text-center">
           <img
             src="img/portfolio/work/nik-and-himself/nik_3.jpg"
             class="img-fluid mx-auto"
             alt="nik_3"
           />
         </div>
-        <div class="col-sm-6 text-center m-bottom">
+        <!-- </div> -->
+        <!-- <div class="row no-gutters"> -->
+        <div class="col-lg-3 text-center">
           <img
             src="img/portfolio/work/nik-and-himself/nik_2.jpg"
             class="img-fluid mx-auto"
             alt="nik_2"
           />
         </div>
-        <div class="col-sm-6 col-lg-4 text-center m-bottom">
+        <div class="col-lg-3 text-center">
           <img
             src="img/portfolio/work/nik-and-himself/nik_4.jpg"
             class="img-fluid mx-auto"
             alt="nik_4"
           />
         </div>
-        <div class="col-md-6 col-lg-4 text-center">
+      </div>
+      <div class="row no-gutters">
+        <div class="col-md-6 text-right">
           <img
             src="img/portfolio/work/nik-and-himself/nik_5.jpg"
             class="img-fluid mx-auto"
             alt="nik_5"
           />
         </div>
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 text-left">
           <img
             src="img/portfolio/work/nik-and-himself/nik_6.jpg"
             class="img-fluid mx-auto"
@@ -1718,7 +1712,7 @@
         >
           <h2 class="para-heading heading-light">ALBUM COVER DESIGNS</h2>
           <p class="project-description para-light">
-            I designed two album covers for Nik’s second album
+            I designed two album covers for Nik, one for his second album
             <em
               ><a
                 class="link-white"
@@ -1726,7 +1720,7 @@
                 >"My Second Try"</a
               ></em
             >
-            and his original Christmas song titled
+            and another one for his original Christmas single titled
             <em
               ><a
                 class="link-white"
@@ -1736,11 +1730,13 @@
             >.
           </p>
           <p class="project-description para-light">
-            For “My Second Try”, I created different designs using variations of
-            double exposure using photos I have taken and a consistent colour
-            palette.<br />
-            I also played around with Nik’s logo enhancing it to suit the
-            design.
+            For <em>“My Second Try”</em>, Nik had a clear idea of the kind of
+            imagery he wanted for his album cover. <br />On top of that, he
+            wanted to incorporate his favourite landscape photograph of mine,
+            one that features crashing waves into the Irish Sea. <br />
+            Following his brief, I created a couple of design variations playing
+            with the concept of double exposure which I felt was best suited for
+            his vision for the album.
           </p>
           <p class="project-description para-light">
             For the
@@ -1755,29 +1751,36 @@
           </p>
         </div>
       </div>
-      <div class="row py-5 margin-0">
-        <div class="col-lg-12 text-center full-width-col">
+      <div class="row m-0 no-gutters background-light">
+        <div class="col-lg-12 text-center mt-4">
           <img
             class="img-fluid wide-img"
             src="img/portfolio/work/nik-and-himself/album_covers.png"
-            alt="album_covers"
+            alt="Nik and Himself Album Covers for My Second Try and Another Christmas without you"
+          />
+        </div>
+        <div class="col-lg-6 text-left">
+          <img
+            class="img-fluid"
+            style="max-height: 600px"
+            src="img/portfolio/work/nik-and-himself/nik-and-himself_mySecondTryAlt.png"
+            alt="Alternative designs for My Second Try Album"
           />
         </div>
       </div>
       <div class="row background-grey px-3">
         <div class="col-lg-12 project-info-container text-center">
           <h2 class="para-heading heading-light">VIDEOGRAPHY</h2>
-          <p class="project-description para-light">
-            During the second photoshoot I did with Nik, I recorded a
-            performance of his single <em>"My Second Try"</em> using a two
-            camera setup comprising of a fixed camera and a hand-held one. The
-            video edit was done by Nik.
+          <p class="project-description para-light pb-4">
+            During the second photoshoot we did, I recorded a performance of his
+            single <em>"My Second Try"</em> using a two-camera setup comprising
+            of a fixed camera and a hand-held one. <br />The video editing was
+            done by Nik.
           </p>
-          <div class="embed-responsive embed-responsive-16by9">
+          <div class="embed-responsive embed-responsive-16by9 rounded">
             <iframe
               class="embed-responsive-item"
               src="https://www.youtube.com/embed/MT1tH_nI-CU"
-              frameborder="0"
               allowfullscreen
             ></iframe>
           </div>
@@ -1833,7 +1836,7 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
@@ -1846,172 +1849,175 @@
           </p>
           <p class="project-description para-light">
             From ragged clothes and rocking solos to gypsy souls and mellow
-            guitar tunes, music is a beautiful art, a universal language which
-            conveys emotions bringing people together.
+            guitar tunes, music is a beautiful art, a universal language charged
+            with emotions bringing people together.
           </p>
           <p class="project-description para-light">
             This genre of photography combines two artistic passions of mine.<br />
-            I enjoy capturing the musician’s energy on stage and their unique
-            talent.
+            I enjoy capturing the musicians' energy on stage and capture their
+            unique talent.
           </p>
         </div>
         <!-- Swiper -->
-        <div class="swiper-container s1">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_1_by_Silvia_Pititto.jpg"
-                alt=""
-              />
+        <div class="col-12">
+          <div class="swiper-container s1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_1_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_2_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_3_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_4_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_5_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_6_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_7_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_8_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_9_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_10_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_11_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_12_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_13_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_14_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_15_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_16_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_17_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_18_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_19_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/music/music_20_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_2_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_3_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_4_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_5_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_6_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_7_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_8_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_9_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_10_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_11_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_12_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_13_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_14_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_15_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_16_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_17_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_18_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_19_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="img/portfolio/work/music/music_20_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
       </div>
       <div class="row logo-container">
         <div class="col text-center">
           <p class="para-grey">Project: Music</p>
           <p class="para-grey">
-            More music photography
+            Discover more music photography
             <a
               class="link"
               href="http://sp--photography.tumblr.com/tagged/music"
+              target="_blank"
               >here</a
             >.
           </p>
@@ -2039,7 +2045,7 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
@@ -2051,89 +2057,92 @@
             A selection of landscape photographs I have taken through the years.
           </p>
           <p class="project-description para-light">
-            I have always been fascinated by the beauty of nature and landscapes
-            are a wonderful expression of what Mother Nature can offer to us.
+            I have always been fascinated by the beauty of nature, and
+            landscapes are a wonderful expression of what Mother Nature can
+            offer to us.
             <br />So intricate and simple at times, they are compounds of atomic
             elements that together create many patterns, textures and colours.
           </p>
           <p class="project-description para-light">
             Season by season, every corner of the Earth is unique in its own way
-            and we all shall respect it.<br />
+            and we all should respect it.<br />
             I strive to portray landscapes in their raw form, highlighting their
             peculiarities.
           </p>
         </div>
         <!-- Swiper -->
-        <div class="swiper-container s2">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/landscape_1_by_Silvia_Pititto.jpg"
-                alt=""
-              />
+        <div class="col-12">
+          <div class="swiper-container s2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/landscape_1_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/lanscape_2_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/lanscape_3_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/lanscape_4_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/landscape_5_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/landscape_6_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/landscape_7_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/landscape_8_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/landscapes/landscape_10_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/lanscape_2_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/lanscape_3_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/lanscape_4_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/landscape_5_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/landscape_6_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/landscape_7_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/landscape_8_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/landscapes/landscape_10_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-          </div>
 
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </div>
       <div class="row logo-container">
@@ -2144,6 +2153,7 @@
             <a
               class="link"
               href="http://sp--photography.tumblr.com/tagged/landscape"
+              target="_blank"
               >here</a
             >.
           </p>
@@ -2171,7 +2181,7 @@
           <!-- Close button -->
           <a class="close-project-btn">
             <img
-              src="img/icons/close_btn_red.png"
+              src="img/svg/close_btn_red.svg"
               alt="close btn"
               class="img-fluid"
             /> </a
@@ -2182,8 +2192,8 @@
             Photography / Video / Motion Graphics
           </h5>
           <p class="project-description para-light">
-            A selection of other photography work including portraits, food,
-            nature and abstract. Some of my photos feature in Nice Price
+            A selection of other photographic work including portraits, food,
+            nature and abstract. Some of my photos also feature in Nice Price
             Acoustic Band's "Live" album.
           </p>
           <p class="project-description para-light">
@@ -2198,125 +2208,126 @@
           </p>
         </div>
         <!-- Swiper -->
-        <div class="swiper-container s3">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_1_by_Silvia_Pititto.jpg"
-                alt=""
-              />
+        <div class="col-12">
+          <div class="swiper-container s3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_1_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_2_1_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_13_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_14_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_15_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_17_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_10_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_11_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_2_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_3_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_4_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_5_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_7_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_8_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_9_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/work/miscellaneous/misc_12_by_Silvia_Pititto.jpg"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_2_1_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_13_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_14_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_15_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_17_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_10_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_11_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_2_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_3_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_4_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_5_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_7_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_8_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_9_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class=""
-                src="img/portfolio/work/miscellaneous/misc_12_by_Silvia_Pititto.jpg"
-                alt=""
-              />
-            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
       </div>
       <div class="row logo-container">
@@ -2324,7 +2335,12 @@
           <p class="para-grey">Other Projects</p>
           <p class="para-grey">
             More photography
-            <a class="link" href="http://sp--photography.tumblr.com/">here</a>.
+            <a
+              class="link"
+              href="http://sp--photography.tumblr.com/"
+              target="_blank"
+              >here</a
+            >.
           </p>
           <p class="para-grey">
             All images by Silvia Pititto. All rights are reserved.
@@ -2341,12 +2357,10 @@
 
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="vendor/swiper/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="vendor/fastclick/fastclick.js"></script>
     <script src="vendor/easing/easing.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-
-    <script src="vendor/select2/select2.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
