@@ -1,6 +1,6 @@
-/*s
+/*
  * silviapititto.com
- * Copyright 2023 Silvia Pititto
+ * Copyright 2024 Silvia Pititto
  *
  */
 (function ($) {
