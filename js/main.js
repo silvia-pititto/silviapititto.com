@@ -131,12 +131,8 @@
     // Closes menu when menu items are clicked
     $(".menu-item, .overlay label").on("click", function (e) {
       e.preventDefault();
-      $("#menu").prop("checked", false);
-    });
-    // Opens menu when menu items are clicked
-    $(".lower label , #menu-btn").on("click", function (e) {
-      e.preventDefault();
-      $("#menu").prop("checked", true);
+      $("#menuButton").toggleClass("change");
+      $("#menu-overlay").toggleClass("open-menu");
     });
 
     /* Scroll Reveal */
@@ -268,3 +264,9 @@
     }
   });
 })(jQuery);
+
+// Globals
+function toggleMenuButton(x) {
+  x.classList.toggle("change");
+  $("#menu-overlay").toggleClass("open-menu");
+}

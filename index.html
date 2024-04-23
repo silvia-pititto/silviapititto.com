@@ -19,7 +19,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link href="css/main.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
 
     <!-- Custom Fonts -->
     <link
@@ -70,16 +70,12 @@
   </head>
   <body>
     <!-- Navigation -->
-    <input type="checkbox" id="menu" />
-    <div class="lower">
-      <label for="menu">
-        <i class="menu-btn"></i>
-      </label>
+    <div class="menuButton" onclick="toggleMenuButton(this)">
+      <div id="menu-bar1" class="menu-bar"></div>
+      <div id="menu-bar2" class="menu-bar"></div>
+      <div id="menu-bar3" class="menu-bar"></div>
     </div>
-    <div class="overlay overlay-hugeinc">
-      <label for="menu">
-        <i class="close-menu-btn x-btn"></i>
-      </label>
+    <div id="menu-overlay" class="overlay overlay-hugeinc">
       <nav>
         <ul>
           <li>
