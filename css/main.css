@@ -656,6 +656,10 @@ input {
   position: absolute;
   right: 7rem;
   top: 4rem;
+  cursor: pointer;
+}
+.close-project-btn:hover {
+  opacity: 70%;
 }
 .project-row {
   background-color: white;
