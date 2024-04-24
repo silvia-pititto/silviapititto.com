@@ -554,6 +554,8 @@ input {
 #menu-overlay.open-menu {
   height: 100%;
   visibility: visible;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 #menu-overlay nav * {
   opacity: 0%;
@@ -565,6 +567,11 @@ input {
 }
 #menu-overlay.open-menu ~ .menu-item {
   opacity: 0;
+}
+.hover-grow-item:focus,
+.hover-grow-item:hover {
+  transition: all 0.1s ease-in-out;
+  transform: scale(1.14);
 }
 
 /* Projects */
@@ -582,7 +589,6 @@ input {
   padding: 0;
 }
 .project-title {
-  /* Remix: */
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 28pt;

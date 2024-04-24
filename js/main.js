@@ -129,9 +129,9 @@
       toggleScreen(e, projectId, isClosing);
     });
     // Closes menu when menu items are clicked
-    $(".menu-item, .overlay label").on("click", function (e) {
+    $(".menu-item").on("click", function (e) {
       e.preventDefault();
-      $("#menuButton").toggleClass("change");
+      $(".menuButton").toggleClass("change");
       $("#menu-overlay").toggleClass("open-menu");
     });
 
