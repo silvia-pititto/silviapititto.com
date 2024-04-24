@@ -70,32 +70,41 @@
   </head>
   <body>
     <!-- Navigation -->
-    <input type="checkbox" id="menu" />
-    <div class="lower">
-      <label for="menu">
-        <i class="menu-btn"></i>
-      </label>
+    <div class="menuButton" onclick="toggleMenuButton(this)">
+      <div id="menu-bar1" class="menu-bar"></div>
+      <div id="menu-bar2" class="menu-bar"></div>
+      <div id="menu-bar3" class="menu-bar"></div>
     </div>
-    <div class="overlay overlay-hugeinc">
-      <label for="menu">
-        <i class="close-menu-btn x-btn"></i>
-      </label>
+    <div id="menu-overlay" class="overlay overlay-hugeinc">
       <nav>
         <ul>
           <li>
-            <a class="menu-item page-scroll" href="#home">Home</a>
+            <a class="menu-item page-scroll hover-grow-item" href="#home"
+              >Home</a
+            >
           </li>
           <li>
-            <a class="menu-item page-scroll" href="#about">About</a>
+            <a class="menu-item page-scroll hover-grow-item" href="#about"
+              >About</a
+            >
           </li>
           <li>
-            <a class="menu-item page-scroll" href="#portfolio">Work</a>
+            <a class="menu-item page-scroll hover-grow-item" href="#portfolio"
+              >Work</a
+            >
           </li>
           <li>
-            <a href="https://store.silviapititto.com" target="_blank">Store</a>
+            <a
+              class="hover-grow-item"
+              href="https://silviapititto.bigcartel.com"
+              target="_blank"
+              >Store</a
+            >
           </li>
           <li>
-            <a class="menu-item page-scroll" href="#contact">Contact</a>
+            <a class="menu-item page-scroll hover-grow-item" href="#contact"
+              >Contact</a
+            >
           </li>
           <li style="display: inline-block">
             <a href="https://www.behance.net/silvia-pititto" target="_blank">
@@ -167,7 +176,7 @@
             </a>
           </li>
           <li>
-            <a class="menu-item page-scroll" href="#home"
+            <a class="menu-item page-scroll hover-grow-item" href="#home"
               ><img
                 src="img/icons/SilviaPititto_Logo.png"
                 alt="Silvia Pititto logo"
@@ -257,8 +266,8 @@
                   Dublin Institute of Technology where I achieved a First-class
                   Honours <em>MsC in Creative Digital Media</em> specialising in
                   Mobile & Web Applications.<br /><br />
-                  I’m responsible for the
-                  <em>Customer & User Experience</em> at
+                  I lead the
+                  <em>Product User Experience</em> at
                   <a
                     class="link"
                     target="_blank"
@@ -690,7 +699,7 @@
                 <a class="page-scroll" href="#portfolio">Work</a>
               </li>
               <li class="list-inline-item footer-nav-items">
-                <a href="https://store.silviapititto.com" target="_blank"
+                <a href="https://silviapititto.bigcartel.com" target="_blank"
                   >Store</a
                 >
               </li>
@@ -1231,7 +1240,7 @@
             During my time at VML Technology, I’ve introduced and led
             user-centred design processes and user research. This translated
             into becoming the first
-            <em>Customer & User Experience Executive</em> at the company.
+            <em>Product User Experience Lead</em> at the company.
           </p>
           <p class="project-description para-grey">
             I’m involved at all stages of the product process, from research,
