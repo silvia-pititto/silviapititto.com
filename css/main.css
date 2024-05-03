@@ -63,6 +63,11 @@ a {
 .mt-4 {
   margin-top: 4%;
 }
+.align-center {
+  display: grid;
+  align-items: center;
+  place-items: center;
+}
 /* Custom Button Styles */
 .btn-dark {
   border-radius: 0;
@@ -330,6 +335,9 @@ div:has(.section-title-img) {
 .swiper-slide {
   margin-top: auto;
   margin-bottom: auto;
+}
+.remix-dark-color {
+  background-color: #191a22;
 }
 /* Footer */
 footer {
