@@ -1141,6 +1141,9 @@ textarea.input2 + .focus-input2::after {
     visibility: visible;
     opacity: 1;
   }
+  .project-description {
+    max-width: 80%;
+  }
 }
 .contact-row {
   float: left;
@@ -1255,6 +1258,9 @@ textarea.input2 + .focus-input2::after {
   .overlay ul li a {
     font-size: 30pt;
   }
+  .project-description {
+    max-width: 100%;
+  }
   /* Footer */
   #to-top {
     display: none;
@@ -1365,6 +1371,9 @@ textarea.input2 + .focus-input2::after {
   .footer-img {
     max-width: 28%;
   }
+  .project-description {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -1383,6 +1392,9 @@ textarea.input2 + .focus-input2::after {
   }
   .container-contact2 {
     padding-bottom: 100pt;
+  }
+  .project-description {
+    max-width: 50%;
   }
 }
 
@@ -1408,5 +1420,8 @@ textarea.input2 + .focus-input2::after {
   .profile-img {
     right: 10%;
     top: 130%;
+  }
+  .project-description {
+    max-width: 80%;
   }
 }
