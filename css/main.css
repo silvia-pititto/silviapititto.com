@@ -625,7 +625,7 @@ input {
   padding-left: 10% !important;
   padding-right: 10% !important; /* REMOVE THIS FOR MOBILE!!! */
 }
-.project-info-container:first-child {
+.project-info-container h1 {
   padding-top: 5rem;
 }
 .background-light {
